@@ -1,0 +1,63 @@
+.headerContainer {
+   height: 600px;
+   width: 100%;
+   position: relative;
+}
+
+.headerImage {
+    width: 100%;
+    height: 100%;
+}
+
+.myImage {
+    width:300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
+    border: 4px solid #012622;
+
+}
+
+.gitImage {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    right: 0;
+    background-color: #E98A15;
+    border-radius: 50%;
+    margin:10px 10px 0;
+    cursor: pointer;
+    border: 2px solid #012622;
+}
+
+.linkedinImage {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    right: 80px;
+    background-color: #E98A15;
+    border-radius: 50%;
+    margin:10px 10px 0;
+    cursor: pointer;
+    border: 2px solid #012622;
+}
+
+.twitterImage {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    right: 160px;
+    background-color: #E98A15;
+    border-radius: 50%;
+    margin:10px 10px 0;
+    cursor: pointer;
+    border: 2px solid #012622;
+}
+
+.gitLink {
+    cursor: pointer;
+}
+
+
