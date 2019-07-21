@@ -1,0 +1,41 @@
+.titleContainer {
+    height: 145px;
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titleText {
+    color:#012622;
+    font-weight: normal;
+    font-size: 36px;
+}
+
+.profileContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40px;
+}
+
+.profileHeaderName {
+    font-weight: bold;
+    font-size:15px;
+    color: #012622;
+}
+
+.profileHeaderValue {
+    font-size:15px;
+    color: #003B36;
+}
+
+.divBand {
+    background-color: #E98A15;
+    height: 4px;
+    width: 60%;
+    margin-bottom: 10px;
+}
