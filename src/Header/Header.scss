@@ -20,40 +20,39 @@
 
 }
 
-.gitImage {
+%linkImagePlaceholder {
     position: absolute;
+    background-color: #E98A15;
+    border-radius: 50%;
+    margin:10px 10px 0;
+    cursor: pointer;
+    border: 2px solid #012622;
+
+    &:hover{
+      background-color: #ecb877; 
+    }
+}
+
+.gitImage {
+    @extend %linkImagePlaceholder;
     width: 70px;
     height: 70px;
     right: 0;
-    background-color: #E98A15;
-    border-radius: 50%;
-    margin:10px 10px 0;
-    cursor: pointer;
-    border: 2px solid #012622;
 }
 
 .linkedinImage {
-    position: absolute;
+    @extend %linkImagePlaceholder;
     width: 70px;
     height: 70px;
     right: 80px;
-    background-color: #E98A15;
-    border-radius: 50%;
-    margin:10px 10px 0;
-    cursor: pointer;
-    border: 2px solid #012622;
 }
 
 .twitterImage {
+    @extend %linkImagePlaceholder;
     position: absolute;
     width: 70px;
     height: 70px;
     right: 160px;
-    background-color: #E98A15;
-    border-radius: 50%;
-    margin:10px 10px 0;
-    cursor: pointer;
-    border: 2px solid #012622;
 }
 
 .gitLink {

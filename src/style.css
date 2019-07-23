@@ -1,6 +1,15 @@
+@import "color";
+
+* {
+    box-sizing: border-box;
+  }
+
 body {
+    padding: 0;
+    margin: 0;
     width: 100vw;
-    background-image:url('./assets/images/background.png');
+    background-image:url('./assets/images/background.jpg');
     background-repeat: repeat-y;
     font-family: Helvetica, sans-serif;
+    background-size: 100% 300px;
 }

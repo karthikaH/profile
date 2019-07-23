@@ -1,0 +1,49 @@
+@import "../color";
+
+.educationContainer {
+    margin: 10px;
+    width: calc(100% - 20px);
+    height: 400px;
+    background-color: #E8E8E8;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.educationHeader {
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+.educationHeaderText {
+    font-family: cursive;
+    font-size: 30px;
+    margin-left: 10px;
+    color: #012622;
+}
+
+.educationBody{
+    display: flex;
+    height: 330px;
+    color: #012622;
+    font-size: 14px;
+}
+
+.educationImage {
+    width: 500px;
+    height: 320px;
+    margin: 0 10px 10px;
+    align-self: flex-end;
+}
+
+.educationList {
+    width: calc(100% - 520px);
+    margin: 10px;
+}
+
+.educationHeaderName {
+    font-weight: bold;
+    font-size: 15px;
+    color: $grayBackgroundColor;
+}

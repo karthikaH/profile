@@ -1,8 +1,10 @@
+@import "../color";
+
 .skillSetContainer {
     margin: 10px;
     width: calc(100% - 20px);
     height: 400px;
-    background-color: #68696b;
+    background-color: $grayBackgroundColor;
     display: flex;
     flex-direction: column;
     border-radius: 5px;
