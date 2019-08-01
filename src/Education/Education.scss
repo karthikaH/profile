@@ -1,8 +1,8 @@
 @import "../color";
 
 .educationContainer {
-    margin: 10px;
-    width: calc(100% - 20px);
+    margin: 20px;
+    width: calc(100% - 40px);
     height: 400px;
     background-color: #E8E8E8;
     display: flex;
@@ -38,7 +38,7 @@
 }
 
 .educationList {
-    width: calc(100% - 520px);
+    width: calc(100% - 540px);
     margin: 0 10px 0 10px;
     height: 100%;
 }

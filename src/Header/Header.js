@@ -14,37 +14,26 @@ const Header = () => {
         href="https://github.com/karthikaH"
         target="_blank"
         rel="noopener noreferrer"
-        className="gitLink"
-      >
+        className="gitLink">
         <img src={gitImage} alt="git link" className="gitImage"></img>
       </a>
       <a
         href="https://www.linkedin.com/in/karthika-hariharan-71bb1aab/"
         target="_blank"
         rel="noopener noreferrer"
-        className="gitLink"
-      >
-        <img
-          src={linkedinImage}
-          alt="linkedin link"
-          className="linkedinImage"
-        ></img>
+        className="gitLink">
+        <img src={linkedinImage} alt="linkedin link" className="linkedinImage"></img>
       </a>
       <a
         href="https://twitter.com/KarthikaHariha4"
         target="_blank"
         rel="noopener noreferrer"
-        className="gitLink"
-      >
+        className="gitLink">
         <img src={twitterImage} alt="twitter link" className="twitterImage"></img>
       </a>
-      <img
-        src={headerImage}
-        alt="coffee plus working"
-        className="headerImage"
-      ></img>
-      <img src={myImage} alt="this is how i look" className="myImage"></img>
-      <Title />
+      <img src={headerImage} alt="coffee plus working" className="headerImage"></img>
+      <img src={myImage} alt="this is how i look" className="myImage shadow"></img>
+      <Title/>
     </div>
   );
 };

@@ -27,9 +27,9 @@ const educationData = [
 
 const Education = () => {
     return (
-        <div className="educationContainer">
+        <div className="educationContainer effect">
             <div className="educationHeader">
-                <div className="educationHeaderText">My Learning Path</div>
+                <div className="educationHeaderText">My Learning expedition till UG</div>
             </div>
             <div className="educationBody">
                 <div className="educationList">
