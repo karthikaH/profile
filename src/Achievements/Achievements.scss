@@ -37,6 +37,18 @@
     grid-row: 1/1;
     background-color: #E98A15;
     margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+
+}
+
+.headerText {
+    font-family: cursive;
+    font-size: 30px;
+    margin-left: 10px;
+    color: $lightBgColor;
 }
 
 .achievementsHeader {
@@ -47,12 +59,31 @@
 
 .lifeSkillsBody, .achievementsBody, .hobbiesBody{
     grid-row: 2/2;
-    background-color: #E8E8E8;
     margin: 0 10px 10px;
 }
 
-.achievementsBody{
-    grid-row: 2/2;
-    background-color: $grayBackgroundColor;
-    margin: 0 10px 10px;
-}
+
+%checkListPlaceholder {
+    color: $lightBgColor;
+    list-style: none;
+    line-height: 1.5;
+  }
+
+  .lifeSkillsList, .achievementList, .hobbiesList {
+      @extend %checkListPlaceholder;
+  }
+  
+  .lifeSkillsList li:before {
+    content: '❋ ';
+    color: #E98A15;
+  }
+
+  .achievementList li:before {
+    content: '✬ ';
+    color: $grayBackgroundColor;
+  }
+
+  .hobbiesList li:before {
+    content: '❤︎ ';
+    color: #E98A15;
+  }
