@@ -27,9 +27,9 @@ const Achievements = () => {
                 </div>
                 <div className="achievementsBody">
                     <ul className="achievementList">
-                        <li>Won two Spot Awards for owning the development & efficiently completing
-                            projects even before the release date</li>
-                        <li>Became university topper in fourth semester in college</li>
+                        <li>Spot Awards for owning the development & efficiently completing projects
+                            even before the release date</li>
+                        <li>University topper in fourth semester in college</li>
                     </ul>
                 </div>
             </div>
