@@ -14,15 +14,15 @@ var e=arguments[3];Object.defineProperty(exports,"__esModule",{value:!0});var n=
 },{"react":"1n8/","object-assign":"J4Nk","scheduler":"MDSO"}],"NKHc":[function(require,module,exports) {
 "use strict";function _(){if("undefined"!=typeof __REACT_DEVTOOLS_GLOBAL_HOOK__&&"function"==typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE){0;try{__REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE(_)}catch(O){console.error(O)}}}_(),module.exports=require("./cjs/react-dom.production.min.js");
 },{"./cjs/react-dom.production.min.js":"i17t"}],"BcA8":[function(require,module,exports) {
-module.exports="profile/headerImage.e891aca7.jpg";
+module.exports="headerImage.e891aca7.jpg";
 },{}],"QQOz":[function(require,module,exports) {
-module.exports="profile/gitImage.89e52e4f.png";
+module.exports="gitImage.89e52e4f.png";
 },{}],"mHGS":[function(require,module,exports) {
-module.exports="profile/linkedinImage.1804b3b3.png";
+module.exports="linkedinImage.1804b3b3.png";
 },{}],"1pHC":[function(require,module,exports) {
-module.exports="profile/twitterImage.7d2d4e0a.svg";
+module.exports="twitterImage.7d2d4e0a.svg";
 },{}],"gzTc":[function(require,module,exports) {
-module.exports="profile/myPhoto.3d825f05.jpg";
+module.exports="myPhoto.3d825f05.jpg";
 },{}],"lArw":[function(require,module,exports) {
 
 },{}],"Zagq":[function(require,module,exports) {
@@ -30,33 +30,33 @@ module.exports="profile/myPhoto.3d825f05.jpg";
 },{"react":"1n8/","./Title.scss":"lArw"}],"3UqT":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;var e=n(require("react")),a=n(require("../assets/images/headerImage.jpg")),t=n(require("../assets/images/gitImage.png")),r=n(require("../assets/images/linkedinImage.png")),l=n(require("../assets/images/twitterImage.svg")),i=n(require("../assets/images/myPhoto.jpg"));require("./Header.scss");var s=n(require("../Title/Title"));function n(e){return e&&e.__esModule?e:{default:e}}var m=function(){return e.default.createElement("div",{className:"headerContainer"},e.default.createElement("a",{href:"https://github.com/karthikaH",target:"_blank",rel:"noopener noreferrer",className:"gitLink"},e.default.createElement("img",{src:t.default,alt:"git link",className:"gitImage"})),e.default.createElement("a",{href:"https://www.linkedin.com/in/karthika-hariharan-71bb1aab/",target:"_blank",rel:"noopener noreferrer",className:"gitLink"},e.default.createElement("img",{src:r.default,alt:"linkedin link",className:"linkedinImage"})),e.default.createElement("a",{href:"https://twitter.com/KarthikaHariha4",target:"_blank",rel:"noopener noreferrer",className:"gitLink"},e.default.createElement("img",{src:l.default,alt:"twitter link",className:"twitterImage"})),e.default.createElement("img",{src:a.default,alt:"coffee plus working",className:"headerImage"}),e.default.createElement("img",{src:i.default,alt:"this is how i look",className:"myImage shadow"}),e.default.createElement(s.default,null))},u=m;exports.default=u;
 },{"react":"1n8/","../assets/images/headerImage.jpg":"BcA8","../assets/images/gitImage.png":"QQOz","../assets/images/linkedinImage.png":"mHGS","../assets/images/twitterImage.svg":"1pHC","../assets/images/myPhoto.jpg":"gzTc","./Header.scss":"lArw","../Title/Title":"Zagq"}],"NlEn":[function(require,module,exports) {
-module.exports="profile/skillSet.b83bf3cf.jpg";
+module.exports="skillSet.b83bf3cf.jpg";
 },{}],"jP5D":[function(require,module,exports) {
-module.exports="profile/reactLogo.f7bab2c7.png";
+module.exports="reactLogo.f7bab2c7.png";
 },{}],"uLD9":[function(require,module,exports) {
-module.exports="profile/redux.f9316b9c.png";
+module.exports="redux.f9316b9c.png";
 },{}],"qrxb":[function(require,module,exports) {
-module.exports="profile/jsLogo.954f6e3a.png";
+module.exports="jsLogo.954f6e3a.png";
 },{}],"SLfH":[function(require,module,exports) {
-module.exports="profile/html5.9f5f1bee.png";
+module.exports="html5.9f5f1bee.png";
 },{}],"/5VS":[function(require,module,exports) {
-module.exports="profile/css.2a301925.svg";
+module.exports="css.2a301925.svg";
 },{}],"6l4c":[function(require,module,exports) {
-module.exports="profile/node.723930cb.png";
+module.exports="node.723930cb.png";
 },{}],"3vKb":[function(require,module,exports) {
-module.exports="profile/angular.86e144c4.png";
+module.exports="angular.86e144c4.png";
 },{}],"T6ZT":[function(require,module,exports) {
-module.exports="profile/plotly.aa5e53ff.png";
+module.exports="plotly.aa5e53ff.png";
 },{}],"W/eG":[function(require,module,exports) {
-module.exports="profile/sass.ee48e1a1.png";
+module.exports="sass.ee48e1a1.png";
 },{}],"3oHj":[function(require,module,exports) {
-module.exports="profile/flow.47c1c450.png";
+module.exports="flow.47c1c450.png";
 },{}],"40Xh":[function(require,module,exports) {
-module.exports="profile/immutablejs.a91ab151.png";
+module.exports="immutablejs.a91ab151.png";
 },{}],"9clN":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;var e=o(require("react"));require("./SkillSet.scss");var a=o(require("../assets/images/skillSet.jpg")),t=o(require("../assets/images/reactLogo.png")),l=o(require("../assets/images/redux.png")),s=o(require("../assets/images/jsLogo.png")),m=o(require("../assets/images/html5.png")),r=o(require("../assets/images/css.svg")),c=o(require("../assets/images/node.png")),n=o(require("../assets/images/angular.png")),i=o(require("../assets/images/plotly.png")),d=o(require("../assets/images/sass.png")),u=o(require("../assets/images/flow.png")),g=o(require("../assets/images/immutablejs.png"));function o(e){return e&&e.__esModule?e:{default:e}}var f=function(){return e.default.createElement("div",{className:"skillSetContainer effect"},e.default.createElement("div",{className:"skillSetHeader"},e.default.createElement("div",{className:"skillSetHeaderText"},"The tools in my toolbox that undergoes perpetual refinement")),e.default.createElement("div",{className:"skillSetBody"},e.default.createElement("div",{className:"skillSetImageContainer"},e.default.createElement("img",{src:a.default,alt:"working with mac",className:"skillSetImage"})),e.default.createElement("div",{className:"skillSetList"},e.default.createElement("ul",{className:"hexagonalGrid"},e.default.createElement("li",{className:"hexagonalElement"},e.default.createElement("div",{className:"hexagon"},e.default.createElement("img",{src:t.default,alt:"React",className:"reactLogo"}))),e.default.createElement("li",{className:"hexagonalElement"},e.default.createElement("div",{className:"hexagon"},e.default.createElement("img",{src:l.default,alt:"Redux",className:"reduxLogo"}))),e.default.createElement("li",{className:"hexagonalElement"},e.default.createElement("div",{className:"hexagon"},e.default.createElement("img",{src:s.default,alt:"Javascript",className:"reactLogo"}))),e.default.createElement("li",{className:"hexagonalElement"},e.default.createElement("div",{className:"hexagon"},e.default.createElement("img",{src:m.default,alt:"Javascript",className:"htmlLogo"}))),e.default.createElement("li",{className:"hexagonalElement"},e.default.createElement("div",{className:"hexagon"},e.default.createElement("img",{src:r.default,alt:"CSS",className:"reduxLogo"}))),e.default.createElement("li",{className:"hexagonalElement"},e.default.createElement("div",{className:"hexagon"},e.default.createElement("img",{src:c.default,alt:"Javascript",className:"reduxLogo"})))),e.default.createElement("ul",{className:"hexagonalGrid second"},e.default.createElement("li",{className:"hexagonalElement"},e.default.createElement("div",{className:"hexagon"},e.default.createElement("img",{src:n.default,alt:"Javascript",className:"reactLogo"}))),e.default.createElement("li",{className:"hexagonalElement"},e.default.createElement("div",{className:"hexagon"},e.default.createElement("img",{src:i.default,alt:"Javascript",className:"reduxLogo"}))),e.default.createElement("li",{className:"hexagonalElement"},e.default.createElement("div",{className:"hexagon"},e.default.createElement("img",{src:d.default,alt:"Javascript",className:"reduxLogo"}))),e.default.createElement("li",{className:"hexagonalElement"},e.default.createElement("div",{className:"hexagon"},e.default.createElement("img",{src:u.default,alt:"Javascript",className:"reduxLogo"}))),e.default.createElement("li",{className:"hexagonalElement"},e.default.createElement("div",{className:"hexagon"},e.default.createElement("img",{src:g.default,alt:"Javascript",className:"reactLogo"})))))))},E=f;exports.default=E;
 },{"react":"1n8/","./SkillSet.scss":"lArw","../assets/images/skillSet.jpg":"NlEn","../assets/images/reactLogo.png":"jP5D","../assets/images/redux.png":"uLD9","../assets/images/jsLogo.png":"qrxb","../assets/images/html5.png":"SLfH","../assets/images/css.svg":"/5VS","../assets/images/node.png":"6l4c","../assets/images/angular.png":"3vKb","../assets/images/plotly.png":"T6ZT","../assets/images/sass.png":"W/eG","../assets/images/flow.png":"3oHj","../assets/images/immutablejs.png":"40Xh"}],"XS4o":[function(require,module,exports) {
-module.exports="profile/education.b6ccbf6c.jpg";
+module.exports="education.b6ccbf6c.jpg";
 },{}],"pBGv":[function(require,module,exports) {
 
 var t,e,n=module.exports={};function r(){throw new Error("setTimeout has not been defined")}function o(){throw new Error("clearTimeout has not been defined")}function i(e){if(t===setTimeout)return setTimeout(e,0);if((t===r||!t)&&setTimeout)return t=setTimeout,setTimeout(e,0);try{return t(e,0)}catch(n){try{return t.call(null,e,0)}catch(n){return t.call(this,e,0)}}}function u(t){if(e===clearTimeout)return clearTimeout(t);if((e===o||!e)&&clearTimeout)return e=clearTimeout,clearTimeout(t);try{return e(t)}catch(n){try{return e.call(null,t)}catch(n){return e.call(this,t)}}}!function(){try{t="function"==typeof setTimeout?setTimeout:r}catch(n){t=r}try{e="function"==typeof clearTimeout?clearTimeout:o}catch(n){e=o}}();var c,s=[],l=!1,a=-1;function f(){l&&c&&(l=!1,c.length?s=c.concat(s):a=-1,s.length&&h())}function h(){if(!l){var t=i(f);l=!0;for(var e=s.length;e;){for(c=s,s=[];++a<e;)c&&c[a].run();a=-1,e=s.length}c=null,l=!1,u(t)}}function m(t,e){this.fun=t,this.array=e}function p(){}n.nextTick=function(t){var e=new Array(arguments.length-1);if(arguments.length>1)for(var n=1;n<arguments.length;n++)e[n-1]=arguments[n];s.push(new m(t,e)),1!==s.length||l||i(h)},m.prototype.run=function(){this.fun.apply(null,this.array)},n.title="browser",n.env={},n.argv=[],n.version="",n.versions={},n.on=p,n.addListener=p,n.once=p,n.off=p,n.removeListener=p,n.removeAllListeners=p,n.emit=p,n.prependListener=p,n.prependOnceListener=p,n.listeners=function(t){return[]},n.binding=function(t){throw new Error("process.binding is not supported")},n.cwd=function(){return"/"},n.chdir=function(t){throw new Error("process.chdir is not supported")},n.umask=function(){return 0};
@@ -637,4 +637,4 @@ var r,e;module.exports=require("./factoryWithThrowingShims")();
 },{"react":"1n8/","./Achievements.scss":"lArw"}],"lY9v":[function(require,module,exports) {
 "use strict";var e=n(require("react")),t=n(require("react-dom")),l=n(require("./Header/Header")),r=n(require("./SkillSet/SkillSet")),u=n(require("./Education/Education")),a=n(require("./Achievements/Achievements"));function n(e){return e&&e.__esModule?e:{default:e}}var d=function(){return e.default.createElement("div",null,e.default.createElement(l.default,null),e.default.createElement(r.default,null),e.default.createElement(u.default,null),e.default.createElement(a.default,null))};t.default.render(e.default.createElement(d),document.getElementById("root"));
 },{"react":"1n8/","react-dom":"NKHc","./Header/Header":"3UqT","./SkillSet/SkillSet":"9clN","./Education/Education":"YWvj","./Achievements/Achievements":"FBBe"}]},{},["lY9v"], null)
-//# sourceMappingURL=profile/App.fe37cdbd.js.map
+//# sourceMappingURL=App.fe37cdbd.js.map
