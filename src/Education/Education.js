@@ -9,19 +9,19 @@ const educationData = [
         year: 2009,
         board: 'ICSC',
         institution: 'SV',
-        course: '10th'
+        course: 'Primary School'
     }, {
         percentage: 94,
         year: 2011,
         board: 'ISC',
         institution: 'SV',
-        course: '12th'
+        course: 'Secondary School'
     }, {
         percentage: 89.2,
         year: 2015,
-        board: 'Kerala University',
-        institution: 'Govt. Engineering College, Barton Hill',
-        course: 'B-Tech (ECE)'
+        board: '',
+        institution: '',
+        course: 'UG in ECE'
     }
 ]
 
@@ -81,7 +81,7 @@ const Education = () => {
                                 y: val.percentage,
                                 xref: 'x',
                                 yref: 'y',
-                                text: `In <b>${val.year}</b>,<br>passed <b>${val.course}</b><br>under <b>${val.board}</b><br>from <b>${val.institution}</b><br>with <b>${val.percentage}%</b>`,
+                                text: `In <b>${val.year}</b>,<br>completed <b>${val.course}</b><br>with <b>${val.percentage}%</b>`,
                                 showarrow: true,
                                 arrowhead: 7,
                                 ax: 0,

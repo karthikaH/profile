@@ -12,7 +12,7 @@ const Title = () => {
           along my path, especially frontend.
           <br/>
           Please reach me out at
-          <span className="profileHeaderName">`hariharan.karthika93@gmail.com`</span>.
+          <span className="profileHeaderName">`karthikah7760@gmail.com`</span>.
         </div>
       </section>
     </div>
