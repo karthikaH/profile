@@ -34,6 +34,13 @@ const Education = () => {
             <div className="educationBody">
                 <div className="educationList">
                     <Plot
+                        staticPlot
+                        responsive
+                        useResizeHandler
+                        style={{
+                        width: "100%",
+                        height: "100%"
+                    }}
                         data={[{
                             x: educationData.map(val => val.year),
                             y: educationData.map(val => val.percentage),
@@ -93,41 +100,7 @@ const Education = () => {
                         paper_bgcolor: '#E8E8E8',
                         plot_bgcolor: '#E8E8E8'
                     }}/>
-                </div>{/* <p className="educationList">
-                    <span className="educationHeaderName">In 2009,
-                    </span>{" "}
-                    I completed my 10th grade under
-                    <span className="educationHeaderName">
-                        &nbsp;ICSC
-                    </span>
-                    &nbsp;board from
-                    <span className="educationHeaderName">
-                        &nbsp;Sarvodaya Vidyalaya&nbsp;
-                    </span>school with
-                    <span className="educationHeaderName">&nbsp;93.57 %.</span>
-                    <span className="educationHeaderName">In 2011,
-                    </span>{" "}
-                    I completed my 12th grade under
-                    <span className="educationHeaderName">
-                        &nbsp;ISC
-                    </span>
-                    &nbsp;board from
-                    <span className="educationHeaderName">
-                        &nbsp;Sarvodaya Vidyalaya&nbsp;
-                    </span>school with
-                    <span className="educationHeaderName">&nbsp;94 %.</span>
-                    <span className="educationHeaderName">In 2015,
-                    </span>{" "}
-                    I completed undergraduation under
-                    <span className="educationHeaderName">
-                        &nbsp;Kerala University
-                    </span>
-                    &nbsp;from
-                    <span className="educationHeaderName">
-                        &nbsp;Government Engineering College, Barton Hill&nbsp;
-                    </span>school with
-                    <span className="educationHeaderName">&nbsp;CGPA 8.92.</span>
-                </p> */}
+                </div>
                 <div className="educationImageContainer">
                     <img src={education} alt="learning" className="educationImage"></img>
                 </div>

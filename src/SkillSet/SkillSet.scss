@@ -3,7 +3,7 @@
 .skillSetContainer {
     margin: 20px;
     width: calc(100% - 40px);
-    height: 400px;
+    height: auto;
     background-color: $grayBackgroundColor;
     display: flex;
     flex-direction: column;
@@ -17,13 +17,12 @@
 
 
 .skillSetList {
-    width: calc(100% - 540px);
+    width: 700px;
 }
 
 .skillSetHeader {
     display: flex;
     align-items: center;
-    height: 70px;
 }
 
 .skillSetHeaderText {
@@ -35,9 +34,9 @@
 
 .skillSetBody{
     display: flex;
-    height: 330px;
     color: #E98A15;
     font-size: 14px;
+    flex-wrap: wrap;
 }
 
 .skillSetImage {
