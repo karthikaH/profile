@@ -125,3 +125,11 @@
     height: 112%;
     width: 130%;
 }
+
+@media only screen and (max-width: 520px) {
+    .skillSetImage {
+        width: calc(100% - 20px);
+        height: 320px;
+        margin: 0 10px 10px;
+    }
+  }

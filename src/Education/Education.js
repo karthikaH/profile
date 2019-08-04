@@ -9,13 +9,13 @@ const educationData = [
         year: 2009,
         board: 'ICSC',
         institution: 'SV',
-        course: 'Primary School'
+        course: 'Primary<br>School'
     }, {
         percentage: 94,
         year: 2011,
         board: 'ISC',
         institution: 'SV',
-        course: 'Secondary School'
+        course: 'Secondary<br>School'
     }, {
         percentage: 89.2,
         year: 2015,
@@ -88,7 +88,7 @@ const Education = () => {
                                 y: val.percentage,
                                 xref: 'x',
                                 yref: 'y',
-                                text: `In <b>${val.year}</b>,<br>completed <b>${val.course}</b><br>with <b>${val.percentage}%</b>`,
+                                text: `Completed<br><b>${val.course}`,
                                 showarrow: true,
                                 arrowhead: 7,
                                 ax: 0,
