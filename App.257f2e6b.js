@@ -637,4 +637,4 @@ var r,e;module.exports=require("./factoryWithThrowingShims")();
 },{"react":"1n8/","./Achievements.scss":"lArw"}],"lY9v":[function(require,module,exports) {
 "use strict";var e=n(require("react")),t=n(require("react-dom")),l=n(require("./Header/Header")),r=n(require("./SkillSet/SkillSet")),u=n(require("./Education/Education")),a=n(require("./Achievements/Achievements"));function n(e){return e&&e.__esModule?e:{default:e}}var d=function(){return e.default.createElement("div",null,e.default.createElement(l.default,null),e.default.createElement(r.default,null),e.default.createElement(u.default,null),e.default.createElement(a.default,null))};t.default.render(e.default.createElement(d),document.getElementById("root"));
 },{"react":"1n8/","react-dom":"NKHc","./Header/Header":"3UqT","./SkillSet/SkillSet":"9clN","./Education/Education":"YWvj","./Achievements/Achievements":"FBBe"}]},{},["lY9v"], null)
-//# sourceMappingURL=App.3d1ffc4f.js.map
+//# sourceMappingURL=App.257f2e6b.js.map
