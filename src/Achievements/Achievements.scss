@@ -3,8 +3,8 @@
 .achievementsMainContainer {
    display: grid;
    grid-template-columns: 1fr 10px 2fr 10px 1fr;
-   margin: 10px;
-   width: calc(100% - 20px);
+   margin: 20px;
+   width: calc(100% - 40px);
    height: auto;
    align-items: center;
 }
@@ -93,7 +93,6 @@
     .achievementsMainContainer {
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: none;
-        margin: 10px;
      }
 
      .lifeSkillsContainer {
@@ -104,6 +103,7 @@
     .achievementsContainer {
         grid-row: 2/2;
         grid-column: none;
+        height: 80%;
     }
     
     .hobbiesContainer {
