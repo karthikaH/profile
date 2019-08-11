@@ -13,13 +13,16 @@
 .educationHeader {
     display: flex;
     align-items: center;
+    background-color: $grayBackgroundColor;
+    margin: 10px;
+    justify-content: center;
 }
 
 .educationHeaderText {
     font-family: cursive;
     font-size: 30px;
     margin-left: 10px;
-    color: #012622;
+    color: #E8E8E8;
 }
 
 .educationBody{

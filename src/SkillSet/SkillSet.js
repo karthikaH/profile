@@ -1,7 +1,7 @@
 import React from "react";
 import "./SkillSet.scss";
 import skillSet from "../assets/images/skillSet.jpg";
-import reactLogo from "../assets/images/reactLogo.png";
+import reactLogo from "../assets/images/reactLogo.svg";
 import redux from "../assets/images/redux.png";
 import jsLogo from "../assets/images/jsLogo.png";
 import htmlLogo from "../assets/images/html5.png";
@@ -16,7 +16,7 @@ import imLogo from "../assets/images/immutablejs.png";
 const SkillSet = () => {
   return (
     <div className="skillSetContainer effect">
-      <div className="skillSetHeader">
+      <div className="skillSetHeader effect">
         <div className="skillSetHeaderText">The tools in my toolbox that undergoes perpetual refinement</div>
       </div>
       <div className="skillSetBody">
