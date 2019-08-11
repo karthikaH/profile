@@ -15,8 +15,28 @@ body {
     padding: 0;
     margin: 0;
     width: 100vw;
-    background-image:url('./assets/images/background.jpg');
+    /* background-image:url('./assets/images/background.jpg'); */
     background-repeat: repeat-y;
     font-family: Helvetica, sans-serif;
     background-size: 100% 300px;
+}
+
+@media (min-width: 1px) {
+	body {
+    background: url('./assets/images/background-600.jpg') repeat-y;
+    background-size: 100% 300px;
+	}
+}
+
+@media (min-width: 500px) {
+	body {
+    background: url('./assets/images/background-1000.jpg') repeat-y;
+    background-size: 100% 300px;
+	}
+}
+@media (min-width: 1000px) { 
+	body {
+    background: url('./assets/images/background.jpg') repeat-y;
+    background-size: 100% 300px;
+	}
 }

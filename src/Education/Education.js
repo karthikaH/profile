@@ -1,6 +1,8 @@
 import React from "react";
 import "./Education.scss";
 import education from "../assets/images/education.jpg";
+import education831 from "../assets/images/education-831.jpg";
+import education260 from "../assets/images/education-260.jpg";
 import Plot from '../custom-plotly';
 
 const educationData = [
@@ -28,13 +30,12 @@ const educationData = [
 const Education = () => {
     return (
         <div className="educationContainer effect">
-            <div className="educationHeader effect">
+            <header className="educationHeader effect">
                 <div className="educationHeaderText">My Learning expedition till UG</div>
-            </div>
+            </header>
             <div className="educationBody">
                 <div className="educationList">
                     <Plot
-                        staticPlot
                         responsive
                         useResizeHandler
                         style={{
@@ -47,12 +48,12 @@ const Education = () => {
                             type: 'scatter',
                             mode: 'lines+markers',
                             marker: {
-                                color: '#E98A15',
-                                size: 10
+                                color: '#003B36',
+                                size: 12
                             },
                             line: {
                                 color: '#E98A15',
-                                width: 1,
+                                width: 4,
                                 shape: 'spline'
                             }
                         }
@@ -80,7 +81,11 @@ const Education = () => {
                             showline: false,
                             showgrid: false,
                             zeroline: false,
-                            fixedrange: true
+                            fixedrange: true,
+                            tickvals: [
+                                2009, 2011, 2015
+                            ],
+                            ticktext: ["Mar, 2009", "Mar, 2011", "May, 2015"]
                         },
                         annotations: educationData.map(val => {
                             return {
@@ -95,15 +100,18 @@ const Education = () => {
                                 ay: -100
                             }
                         }),
+                        staticPlot: true,
                         autosize: true,
                         height: 320,
                         paper_bgcolor: '#E8E8E8',
                         plot_bgcolor: '#E8E8E8'
                     }}/>
                 </div>
-                <div className="educationImageContainer">
-                    <img src={education} alt="learning" className="educationImage"></img>
-                </div>
+                <picture className="educationImageContainer">
+                    <source srcSet={education} media="(min-width: 1200px)"></source>
+                    <source srcSet={education831} media="(min-width: 800px)"></source>
+                    <img src={education260} alt="learning" className="educationImage"></img>
+                </picture>
             </div>
         </div>
     );
