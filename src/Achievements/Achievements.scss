@@ -2,7 +2,9 @@
 
 .achievementsMainContainer {
    display: grid;
-   grid-template-columns: 1fr 10px 2fr 10px 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
+   grid-template-columns: none;
+   grid-gap: 10px;
    margin: 20px;
    width: calc(100% - 40px);
    height: auto;
@@ -10,7 +12,8 @@
 }
 
 .lifeSkillsContainer {
-    grid-column: 1/1;
+    grid-row: 1;
+    grid-column: none;
     background-color: $grayBackgroundColor;
     height: 100%;
     display: grid;
@@ -18,15 +21,18 @@
 }
 
 .achievementsContainer {
-    grid-column: 3/3;
+    grid-row: 2;
+    grid-column: none;
+    height: 100%;
+    grid-column: 2/3;
     background-color: #E98A15;
-    height: 60%;
     display: grid;
     grid-template-rows: 1fr 3fr;
 }
 
 .hobbiesContainer {
-    grid-column: 5/5;
+    grid-row: 3/3;
+    grid-column: none;
     background-color: $grayBackgroundColor;
     height: 100%;
     display: grid;
@@ -34,7 +40,7 @@
 }
 
 .lifeSkillsHeader, .achievementsHeader, .hobbiesHeader{
-    grid-row: 1/1;
+    grid-row: 1;
     background-color: #E98A15;
     margin: 10px;
     display: flex;
@@ -52,13 +58,11 @@
 }
 
 .achievementsHeader {
-    grid-row: 1/1;
     background-color: $grayBackgroundColor;
-    margin: 10px;
 }
 
 .lifeSkillsBody, .achievementsBody, .hobbiesBody{
-    grid-row: 2/2;
+    grid-row: 2;
     margin: 0 10px 10px;
 }
 
@@ -89,25 +93,27 @@
     color: #E98A15;
   }
 
-  @media only screen and (max-width: 520px) {
+//  tab and desktops
+@media only screen and (min-width: 800px) {
     .achievementsMainContainer {
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: none;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: none;
+        grid-gap: 20px;
      }
 
      .lifeSkillsContainer {
-        grid-row: 1/1;
-        grid-column: none;
+        grid-column: 1/2;
+        grid-row: none;
     }
     
     .achievementsContainer {
-        grid-row: 2/2;
-        grid-column: none;
-        height: 80%;
+        grid-column: 2/3;
+        grid-row: none;
+        height: 60%;
     }
     
     .hobbiesContainer {
-        grid-row: 3/3;
-        grid-column: none;
+        grid-column: 3/4;
+        grid-row: none;
     }
   }

@@ -1,6 +1,8 @@
 import React from "react";
 import "./SkillSet.scss";
 import skillSet from "../assets/images/skillSet.jpg";
+import skillSet1000 from "../assets/images/skillSet-1000.jpg";
+import skillSet600 from "../assets/images/skillSet-600.jpg";
 import reactLogo from "../assets/images/reactLogo.svg";
 import redux from "../assets/images/redux.png";
 import jsLogo from "../assets/images/jsLogo.png";
@@ -20,9 +22,11 @@ const SkillSet = () => {
         <div className="skillSetHeaderText">The tools in my toolbox that undergoes perpetual refinement</div>
       </div>
       <div className="skillSetBody">
-        <div className="skillSetImageContainer">
-          <img src={skillSet} alt="working with mac" className="skillSetImage"></img>
-        </div>
+        <picture className="skillSetImageContainer">
+          <source srcSet={skillSet} media="(min-width: 1200px)"></source>
+          <source srcSet={skillSet1000} media="(min-width: 800px)"></source>
+          <img src={skillSet600} alt="working with mac" className="skillSetImage"></img>
+        </picture>
         <div className="skillSetList">
           <ul className="hexagonalGrid">
             <li className="hexagonalElement">
