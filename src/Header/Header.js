@@ -1,5 +1,7 @@
 import React from "react";
 import headerImage from "../assets/images/headerImage.jpg";
+import headerImage1000 from "../assets/images/headerImage-1000.jpg";
+import headerImage600 from "../assets/images/headerImage-600.jpg";
 import gitImage from "../assets/images/gitImage.png";
 import linkedinImage from "../assets/images/linkedinImage.png";
 import twitterImage from "../assets/images/twitterImage.svg";
@@ -31,7 +33,11 @@ const Header = () => {
         className="gitLink">
         <img src={twitterImage} alt="twitter link" className="twitterImage"></img>
       </a>
-      <img src={headerImage} alt="coffee plus working" className="headerImage"></img>
+      <picture>
+        <source srcSet={headerImage} media="(min-width: 1200px)"></source>
+        <source srcSet={headerImage1000} media="(min-width: 800px)"></source>
+        <img src={headerImage600} alt="coffee plus working" className="headerImage"></img>
+      </picture>
       <img src={myImage} alt="this is how i look" className="myImage shadow"></img>
       <Title/>
     </div>
