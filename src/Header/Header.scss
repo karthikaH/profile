@@ -40,6 +40,35 @@
     right: 0;
 }
 
+%routeLinkPlaceholder{
+    position: absolute;
+    margin:10px 10px;
+    cursor: pointer;
+    width: 100px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #E98A15;
+    font-size: 20px;
+    font-family: cursive;
+
+    &:hover{
+        color: #ecb877; 
+        text-decoration: underline;
+      }
+}
+
+.aboutLink {
+    @extend %routeLinkPlaceholder; 
+    left: 0;
+}
+
+.blogsLink {
+    @extend %routeLinkPlaceholder; 
+    left: 100px;
+}
+
 .linkedinImage {
     @extend %linkImagePlaceholder;
     width: 70px;
