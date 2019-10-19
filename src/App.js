@@ -6,7 +6,9 @@ import Blog from "./Blog";
 
 const App = () => {
   let url = process.env.PUBLIC_URL || '';
-  console.log(window.location.pathname);
+  // I beleive that process.env.PUBLIC_URL is useful in case of CRA as it exposes
+  // homepage URL of the APP through this env variable and so this hack need not
+  // be done
   if (window.location.pathname.includes(`profile`)) {
     url = '/profile'
   }
