@@ -2,7 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import {Router} from "@reach/router";
 import About from "./About";
-import Blog from "./Blog";
+import BlogPage from "./Blog/BlogPage";
+import Details from "./Details/Details";
 
 const App = () => {
   let url = process.env.PUBLIC_URL || '';
@@ -15,7 +16,8 @@ const App = () => {
   return (
     <Router>
       <About path={url + '/'}/>
-      <Blog path={url + '/blogs'}/>
+      <BlogPage path={url + '/blogs'}/>
+      <Details path={url + '/details/:id'}/>
     </Router>
   );
 };
