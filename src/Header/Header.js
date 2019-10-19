@@ -13,10 +13,10 @@ import Title from "../Title/Title";
 const Header = () => {
   return (
     <div className="headerContainer">
-      <Link to="/" className="aboutLink">
+      <Link to={process.env.PUBLIC_URL + '/'} className="aboutLink">
         <div>About Me</div>
       </Link>
-      <Link to="/blogs" className="blogsLink">
+      <Link to={process.env.PUBLIC_URL + '/blogs'} className="blogsLink">
         <div>My Blogs</div>
       </Link>
       <a
