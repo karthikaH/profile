@@ -5,8 +5,11 @@ import About from "./About";
 import Blog from "./Blog";
 
 const App = () => {
-  const url = process.env.PUBLIC_URL || '';
+  let url = process.env.PUBLIC_URL || '';
   console.log(window.location.pathname);
+  if (window.location.pathname.includes(`profile`)) {
+    url = '/profile'
+  }
   return (
     <Router>
       <About path={url + '/'}/>
