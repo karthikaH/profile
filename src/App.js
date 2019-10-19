@@ -6,7 +6,7 @@ import Blog from "./Blog";
 
 const App = () => {
   const url = process.env.PUBLIC_URL || '';
-  console.log(url);
+  console.log(process.env);
   return (
     <Router>
       <About path={url + '/'}/>
