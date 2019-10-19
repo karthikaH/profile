@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "@reach/router";
 import headerImage from "../assets/images/headerImage.jpg";
 import headerImage1000 from "../assets/images/headerImage-1000.jpg";
 import headerImage600 from "../assets/images/headerImage-600.jpg";
@@ -12,6 +13,12 @@ import Title from "../Title/Title";
 const Header = () => {
   return (
     <div className="headerContainer">
+      <Link to="/" className="aboutLink">
+        <div>About Me</div>
+      </Link>
+      <Link to="/blogs" className="blogsLink">
+        <div>My Blogs</div>
+      </Link>
       <a
         href="https://github.com/karthikaH"
         target="_blank"

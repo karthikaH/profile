@@ -1,18 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Header from "./Header/Header";
-import SkillSet from "./SkillSet/SkillSet";
-import Education from "./Education/Education";
-import Achievements from "./Achievements/Achievements";
+import {Router} from "@reach/router";
+import About from "./About";
+import Blog from "./Blog";
 
 const App = () => {
   return (
-    <div>
-      <Header/>
-      <SkillSet/>
-      <Education/>
-      <Achievements/>
-    </div>
+    <Router>
+      <About path="/"/>
+      <Blog path="/blogs"/>
+    </Router>
   );
 };
 
