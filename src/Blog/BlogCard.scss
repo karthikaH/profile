@@ -4,10 +4,11 @@
     margin: 20px;
     width: calc(100% - 40px);
     height: auto;
-    background-color: white;
+    background-color: #3D3D3D;
     display: flex;
     border-radius: 5px;
     flex-flow: column wrap;
+    color: #D8D8D8;
 }
 
 .card {
@@ -35,5 +36,11 @@
       align-items: center;
       margin: 0 0 20px 20px;
       width: calc(100% - 20px);
+      flex-flow: column wrap;
+  }
 
+  .blogFooter {
+      display: flex;
+      justify-content: flex-end;
+      margin: 10px;
   }

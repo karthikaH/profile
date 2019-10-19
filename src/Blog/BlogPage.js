@@ -17,10 +17,15 @@ const BlogPage = () => {
         <Link
             className="detailLink"
             to={url + `/details/${blog.blogId}`}
-            key={blog.blogTitle}><BlogCard title={blog.blogTitle} description={blog.blogDesc}/></Link>
+            key={blog.blogTitle}><BlogCard
+            title={blog.blogTitle}
+            description={blog.blogDesc}
+            date={blog.date}
+            code={blog.code || ''}
+            /></Link>
     ))
     return (
-        <div>
+        <div className="blogPageContainer">
             <div className="blogPageHeader">
                 <Link to={url + '/'} className="backLink">
                     <div>About Me</div>
