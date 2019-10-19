@@ -5,10 +5,12 @@ import About from "./About";
 import Blog from "./Blog";
 
 const App = () => {
+  const url = process.env.PUBLIC_URL || '';
+  console.log(url);
   return (
     <Router>
-      <About path={process.env.PUBLIC_URL + '/'}/>
-      <Blog path={process.env.PUBLIC_URL + '/blogs'}/>
+      <About path={url + '/'}/>
+      <Blog path={url + '/blogs'}/>
     </Router>
   );
 };

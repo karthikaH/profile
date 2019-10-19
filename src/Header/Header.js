@@ -11,12 +11,14 @@ import "./Header.scss";
 import Title from "../Title/Title";
 
 const Header = () => {
+  const url = process.env.PUBLIC_URL || '';
+  console.log(url);
   return (
     <div className="headerContainer">
-      <Link to={process.env.PUBLIC_URL + '/'} className="aboutLink">
+      <Link to={url + '/'} className="aboutLink">
         <div>About Me</div>
       </Link>
-      <Link to={process.env.PUBLIC_URL + '/blogs'} className="blogsLink">
+      <Link to={url + '/blogs'} className="blogsLink">
         <div>My Blogs</div>
       </Link>
       <a
