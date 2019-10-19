@@ -1,0 +1,39 @@
+@import "../color";
+
+.blogContainer {
+    margin: 20px;
+    width: calc(100% - 40px);
+    height: auto;
+    background-color: white;
+    display: flex;
+    border-radius: 5px;
+    flex-flow: column wrap;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .blogTitle {
+      height: 60px;
+      margin-left: 5px;
+      display: flex;
+      align-items: center;
+      font-family: cursive;
+      font-size: 30px;
+      width: calc(100% - 5px);
+  }
+
+  .blogDescription {
+      height: auto;
+      display: flex;
+      align-items: center;
+      margin: 0 0 20px 20px;
+      width: calc(100% - 20px);
+
+  }
