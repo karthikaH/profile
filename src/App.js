@@ -7,8 +7,8 @@ import Blog from "./Blog";
 const App = () => {
   return (
     <Router>
-      <About path="/"/>
-      <Blog path="/blogs"/>
+      <About path={process.env.PUBLIC_URL + '/'}/>
+      <Blog path={process.env.PUBLIC_URL + '/blogs'}/>
     </Router>
   );
 };
