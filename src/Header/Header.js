@@ -11,9 +11,12 @@ import "./Header.scss";
 import Title from "../Title/Title";
 
 const Header = () => {
-  const url = process.env.PUBLIC_URL || '';
+  let url = process.env.PUBLIC_URL || '';
   console.log(url);
   console.log(window.location.pathname);
+  if (window.location.pathname.includes(`profile`)) {
+    url = '/profile'
+  }
   return (
     <div className="headerContainer">
       <Link to={url + '/'} className="aboutLink">
