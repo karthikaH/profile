@@ -8,7 +8,10 @@ const Details = (props) => {
         .map(blog => <BlogCard
             key={blog.blogTitle}
             title={blog.blogTitle}
-            description={blog.blogDesc}/>)
+            description={blog.blogDesc}
+            date={blog.date}
+            code={blog.code || ''}
+            />)
     return (
         <div>
             {blog}
