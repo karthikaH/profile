@@ -13,6 +13,7 @@ import Title from "../Title/Title";
 const Header = () => {
   const url = process.env.PUBLIC_URL || '';
   console.log(url);
+  console.log(window.location.pathname);
   return (
     <div className="headerContainer">
       <Link to={url + '/'} className="aboutLink">
