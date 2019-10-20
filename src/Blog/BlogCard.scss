@@ -21,21 +21,20 @@
   }
 
   .blogTitle {
-      height: 60px;
-      margin-left: 5px;
+      height: calc(100% - 20px);
+      margin: 10px;
       display: flex;
       align-items: center;
       font-family: cursive;
       font-size: 30px;
-      width: calc(100% - 5px);
+      width: calc(100% - 20px);
   }
 
   .blogDescription {
       height: auto;
       display: flex;
-      align-items: center;
-      margin: 0 0 20px 20px;
-      width: calc(100% - 20px);
+      margin: 0 40px;
+      width: calc(100% - 80px);
       flex-flow: column wrap;
   }
 
@@ -43,4 +42,10 @@
       display: flex;
       justify-content: flex-end;
       margin: 10px;
+  }
+
+  .truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }

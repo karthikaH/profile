@@ -1,6 +1,7 @@
 
 import React from "react"
 import Prism from "prismjs"
+
 class PrismCode extends React.Component {
   constructor(props) {
     super(props)

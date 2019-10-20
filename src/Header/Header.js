@@ -20,9 +20,6 @@ const Header = () => {
   }
   return (
     <div className="headerContainer">
-      <Link to={url + '/'} className="aboutLink">
-        <div>About Me</div>
-      </Link>
       <Link to={url + '/blogs'} className="blogsLink">
         <div>My Blogs</div>
       </Link>
