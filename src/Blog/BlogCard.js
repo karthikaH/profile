@@ -11,7 +11,7 @@ const BlogCard = (props) => {
             <PrismCode
                 code={props.code}
                 language="js"
-                plugins={["line-numbers"]}
+                plugins={["line-numbers", "codeWindow"]}
             />
             <footer className="blogFooter">Written On: {props.date}</footer>
         </div>

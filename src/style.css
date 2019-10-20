@@ -88,3 +88,8 @@ body {
     background-size: 100% 300px;
 	}
 }
+
+div.code-toolbar {
+  width: 100%;
+  overflow-x: auto;
+}
