@@ -85,7 +85,8 @@ const data = [
         <article> In javascript, we hear the word Call Stack all the time. So what is a stack?
         <p>STACK is a data structure that helps you to store data like a 'stack of plates'. 
         It follows Last-in-First-out(LIFO) ordering. Hence, the last added Item will be removed first.</p>
-        <p>Below is a simple class implementation of stack with method pop(), push(), peek() & getLength() methods.
+        <p>Below is a simple class implementation of stack with pop(), push(), peek() & getLength() methods. 
+        These methods have Time Complexity as O(1).
         </p>
         </article>
         `,
@@ -170,6 +171,100 @@ const data = [
             console.log(myStack.getLength());
 
             console.log(myStack)
+        `,
+        date: '2019-10-26'
+    },
+    {
+        blogId: shortid.generate(),
+        blogTitle: 'How Queue works!',
+        blogDesc: `
+        <article> In javascript, we hear the word Message Queue all the time. So what is a queue?
+        <p>Queue is a data structure that helps you to store data like a 'line or a queue at a ticket stand'. 
+        It follows First-in-First-out(FIFO) ordering. Hence, the first added Items will be removed first.</p>
+        <p>Below is a simple class implementation of Queue with enqueue(), dequeue(), peek() methods.
+        These methods have Time Complexity as O(1).
+        </p>
+        </article>
+        `,
+        code:`
+        /** Class representing a Queue. 
+         * @constructor
+        */
+        
+        class Queue {
+        
+          constructor() {
+            this._dataStorage = {};
+            this._length = 0;
+            this._headIndex = 0;
+          }
+          /*
+          * Enqueues a new value at the end of the queue
+          * @param {*} value the value to enqueue
+          */
+          enqueue(value) {
+            try{
+             if(!value){
+               throw 'Parameter is not defined'
+             }
+             this._dataStorage[this._headIndex + this._length] = value;
+             this._length++;
+            }
+            catch(err) {
+              console.log(err);
+            }
+          }
+        
+          /*
+          * Dequeues the value from the beginning of the queue and returns it
+          * @return {*} the first and oldest value in the queue
+          */
+          dequeue() {
+            try{
+              if (!this._length) {
+                throw "The Queue is empty";
+              }
+              var firstVal = this._dataStorage[this._headIndex];
+              this._dataStorage[this._headIndex] = undefined; // can use delete keyword
+              this._length--;
+              this._headIndex++;
+              return firstVal;
+            }
+            catch(err){
+              console.log(err);
+            }
+          }
+          /*
+          * Returns the value at the beginning of the queue without removing it from the queue
+          * @return {*} the first and oldest value in the queue
+          */
+          peek() {
+            try{
+              if (!this._length) {
+                throw "The Queue is empty";
+              }
+              return this._dataStorage[this._headIndex];
+            }
+            catch(err){
+              console.log(err);
+            }
+          }
+        }
+        
+        var myQueue = new Queue();
+        myQueue.dequeue();
+        myQueue.enqueue('hi');
+        myQueue.enqueue('bye');
+        myQueue.enqueue('I am back');
+        myQueue.enqueue('I am back2');
+        myQueue.enqueue('I am back3');
+        myQueue.enqueue('bye');
+        myQueue.dequeue();
+        myQueue.dequeue();
+        myQueue.dequeue();
+        
+        
+        console.log(myQueue.peek());
         `,
         date: '2019-10-26'
     },
