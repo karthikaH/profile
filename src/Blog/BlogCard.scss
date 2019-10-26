@@ -1,14 +1,30 @@
 @import "../color";
 
-.blogContainer {
-    margin: 20px;
-    width: calc(100% - 40px);
+%blogContainerPlaceholder {
+    margin: 80px;
+    width: calc(100% - 160px);
     height: auto;
-    background-color: #3D3D3D;
+    background-color: #D8D8D8;
     display: flex;
     border-radius: 5px;
     flex-flow: column wrap;
-    color: #D8D8D8;
+    color: #3D3D3D;
+}
+
+%lineClampPlaceholder {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+.blogContainer {
+    @extend %blogContainerPlaceholder;   
+    @extend %lineClampPlaceholder; 
+}
+
+.detailsBlogContainer {
+    @extend %blogContainerPlaceholder;  
 }
 
 .card {
