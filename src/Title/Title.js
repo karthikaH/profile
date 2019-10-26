@@ -8,7 +8,7 @@ const Title = () => {
       <div className="divBand"></div>
       <section className="profileContainer">
         <div className="profileHeaderValue">
-          A verocious learner who dives into exploring and coding any language that comes
+          A voracious learner who dives into exploring and coding any language that comes
           along my path, especially frontend.
           <br/>
           Please reach me out at
