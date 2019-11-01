@@ -23,6 +23,7 @@ const BlogPage = () => {
                 description={blog.blogDesc}
                 date={blog.date}
                 code={blog.code || ''}
+                showOnlyTitle
             />
         </Link>
     ))
