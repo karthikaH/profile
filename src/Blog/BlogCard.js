@@ -14,11 +14,11 @@ const BlogCard = (props) => {
         <div className={blogClass}>
             <header className="blogTitle">{props.title}</header>
             <div className="blogDescription" dangerouslySetInnerHTML={markup}></div>
-            <PrismCode
+            {!props.showOnlyTitle && <PrismCode
                 code={props.code}
                 language="js"
                 plugins={["line-numbers", "codeWindow"]}
-            />
+            />}
             <footer className="blogFooter">Written On: {props.date}</footer>
         </div>
     );
