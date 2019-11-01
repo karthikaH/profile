@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import {Link} from "@reach/router";
 import data from "./BlogData";
 import BlogCard from "./BlogCard";
 import "./BlogPage.scss";
+import SearchParams from "../Search/Search"
 
 const BlogPage = () => {
     let url = process.env.PUBLIC_URL || '';
@@ -13,7 +14,16 @@ const BlogPage = () => {
         url = '/profile'
     }
 
-    const blog = data.map(blog => (
+    const [filteredData, updateData] = useState(data);
+    const updateSearchValue = (value) => {
+       console.log(value);
+       updateData(data.filter(d => 
+        d.blogTitle.toLowerCase().includes(value.toLowerCase()) ||
+        d.blogDesc.toLowerCase().includes(value.toLowerCase())
+        ));
+    }
+
+    const blog = filteredData.map(blog => (
         <Link
             className="detailLink"
             to={url + `/details/${blog.blogId}`}
@@ -33,6 +43,9 @@ const BlogPage = () => {
                 <Link to={url + '/'} className="backLink">
                     <div>About Me</div>
                 </Link>
+            </div>
+            <div className="searchContainer">
+                <SearchParams updateSearchValue={updateSearchValue}/>
             </div>
             {blog}</div>
     );
