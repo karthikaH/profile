@@ -68,29 +68,39 @@ body {
   }
 }
 
+div.code-toolbar {
+  overflow-x: auto;
+  width: calc(100% - 40px);
+  margin: 20px;
+}
 
 @media (min-width: 1px) {
 	body {
     background: url('./assets/images/background-600.jpg') repeat-y;
-    background-size: 100% 300px;
+    background-size: 100vw 300px;
+    overflow-x: hidden;
 	}
 }
 
 @media (min-width: 500px) {
 	body {
     background: url('./assets/images/background-1000.jpg') repeat-y;
-    background-size: 100% 300px;
+    background-size: 100vw 300px;
+    overflow-x: hidden;
 	}
 }
 @media (min-width: 1000px) { 
 	body {
     background: url('./assets/images/background.jpg') repeat-y;
-    background-size: 100% 300px;
+    background-size: 100vw 300px;
+    overflow-x: hidden;
 	}
 }
 
-div.code-toolbar {
-  overflow-x: auto;
-  width: calc(100% - 80px);
-  margin: 40px;
+@media only screen and (min-width: 800px) {
+  div.code-toolbar {
+    overflow-x: auto;
+    width: calc(100% - 80px);
+    margin: 40px;
+  }
 }

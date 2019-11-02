@@ -52,8 +52,8 @@
   .blogDescription {
       height: auto;
       display: flex;
-      margin: 0 40px;
-      width: calc(100% - 80px);
+      margin: 0 20px;
+      width: calc(100% - 40px);
       flex-flow: column wrap;
   }
 
@@ -79,6 +79,11 @@
     .detailsBlogContainer {
         margin: 80px;
         width: calc(100% - 160px);
+    }
+
+    .blogDescription {
+        margin: 0 40px;
+        width: calc(100% - 80px);
     }
 
 }

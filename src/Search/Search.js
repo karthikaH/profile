@@ -9,13 +9,11 @@ const SearchParams = (props) => {
   }, [searchValue]);
 
   return (
-    <div>
-      <form>
+      <form className="formStyles">
         <label htmlFor="searchTopics">
           <input id="topic" value={searchValue} placeholder="  Type the Topics you wish to see..." className="inputStyles" onChange={e => updateTopic(e.target.value)}/>
         </label>
       </form>
-    </div>
   );
 };
 
