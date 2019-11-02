@@ -1,0 +1,33 @@
+@import "../color";
+
+.aboutPageFooterMainContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    width: 100%;
+    min-height: 200px;
+    height: auto;
+    align-items: center;
+    background-color: $veryDarkColor;
+}
+
+.thoughtTitle, .quoteStyles {
+    font-size:25px;
+    font-family: 'Courgette';
+    font-weight: bold;
+    color: $lightBgColor;   
+}
+
+.thought {
+    font-size:20px;
+    font-weight: 500;
+    color: $grayBackgroundColor; 
+    margin-bottom: 5%;
+}
+
+.mailMe {
+    font-size:15px;
+    font-weight: 500; 
+    color: $lightBgColor; 
+}

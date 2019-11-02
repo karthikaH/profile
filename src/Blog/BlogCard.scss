@@ -48,6 +48,10 @@
       font-size: 30px;
       width: calc(100% - 20px);
   }
+  .blogTitle:before {
+    content: '✤';
+    color: #012622;
+  }
 
   .blogDescription {
       height: auto;
@@ -61,6 +65,8 @@
       display: flex;
       justify-content: flex-end;
       margin: 10px;
+      color: #E98A15;
+      font-weight: bold;
   }
 
   .truncate {
