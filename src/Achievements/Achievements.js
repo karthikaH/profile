@@ -29,7 +29,7 @@ const Achievements = () => {
                     <ul className="achievementList">
                         <li>Spot Awards for owning the development & efficiently completing projects
                             even before the release date</li>
-                        <li>University topper in fourth semester in college</li>
+                        <li>Secured Top Grade in fourth semester under Kerala University</li>
                     </ul>
                 </div>
             </div>

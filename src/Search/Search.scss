@@ -1,8 +1,13 @@
 @import "../color";
 
+.formStyles {
+    width: 100%;
+    margin-top: 5%;
+}
+
 .inputStyles {
     height:36px;
-    width:300px;
+    width: calc(100% - 20px);
     margin: 0 10px;
     background-color: #E98A15;
     color:#E8E8E8;
@@ -15,7 +20,7 @@
 @media only screen and (min-width: 800px) {
 .inputStyles {
     height:36px;
-    width:400px;
+    width: calc(100% - 160px);
     margin: 0 80px;
     background-color: #E98A15;
     color:#E8E8E8;
