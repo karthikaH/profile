@@ -12,7 +12,7 @@ const BlogCard = (props) => {
       });
     return (
         <div className={blogClass}>
-            <header className="blogTitle">{props.title}</header>
+            <header className="blogTitle">&nbsp;{props.title}</header>
             <div className="blogDescription" dangerouslySetInnerHTML={markup}></div>
             {!props.showOnlyTitle && <PrismCode
                 code={props.code}

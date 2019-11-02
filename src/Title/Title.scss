@@ -37,8 +37,14 @@
 .divBand {
     background-color: #E98A15;
     height: 4px;
-    width: 60%;
     margin-bottom: 10px;
+    width: 60%;
+    animation: w60 5s infinite;
+}
+
+@keyframes w60 {
+    from { width: 0%; }
+    to { width: 60%; }
 }
 
 @media only screen and (max-width: 520px) {

@@ -3,6 +3,7 @@ import Header from "./Header/Header";
 import SkillSet from "./SkillSet/SkillSet";
 import Education from "./Education/Education";
 import Achievements from "./Achievements/Achievements";
+import AboutPageFooter from "./AboutPageFooter/AboutPageFooter";
 
 const About = () => {
     return (
@@ -11,6 +12,7 @@ const About = () => {
             <SkillSet/>
             <Education/>
             <Achievements/>
+            <AboutPageFooter />
         </div>
     );
 };
