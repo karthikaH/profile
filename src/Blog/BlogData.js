@@ -429,6 +429,129 @@ const data = [
       `,
       date: '2019-11-01'
   },
+  {
+    blogId: shortid.generate(),
+    blogTitle: 'How Hash Table works!',
+    blogDesc: `
+    <article>
+    <p>Hash Table is a data structure that can map keys to values. The hash function used is a pure function that always
+    gives the same output for same input. On passing key to hasn function, an index will be outputted.
+    The key & the value will be stored at that index. 
+    </p>
+    <p>Different keys can result in same index based on the size of the hash table. This is known 
+    as collision. Whenever the storage size becomes more than 50% of the hash table size, we can double the storage
+    size to minimize the collision
+    </p>
+    <p>Insert(), Retrive() & Remove() - all three gets executed in constant time complexity O(1) for hash table.</p>
+    </article>
+    `,
+    code:`
+    /** Class representing a Hash Table */
+
+    // whenever the size of the storage become more than 50% of
+    // the table size, double the table size
+    // and run the hash function on each input
+    // This is called resizing and its done once in a while
+    // Hence it averages out the complexity
+
+    class HashTable {
+      constructor(n) {
+        this._storage = [];
+        this._size = n;
+      }
+      /*
+      * Inserts a new key-value pair
+      * @param {string} key - the key associated with the value
+      * @param {*} value - the value to insert
+      */
+      insert(key, value) {  // constant time O(1)
+      // key should be unique to make this work
+      const index = this._myhash(key, this._size);
+      if(!this._storage[index]){
+        this._storage[index] = [];
+      }
+      this._storage[index].push([key, value]);
+      }
+      /*
+      * Deletes a key-value pair
+      * @param {string} key - the key associated with the value
+      * @return {*} value - the deleted value
+      */
+      remove(key) {  // constant time O(1)
+      const index = this._myhash(key, this._size);
+      try{
+      if(!this._storage[index]){
+        throw "Some problem";
+      }
+      // since all the hash functions normally created would be 
+      // so effective in reducing the collisions
+      // this for loop cost can be amortized 
+      // [here worst case is so rare]ß
+      for(let i = 0; i < this._storage[index].length; i++){
+          if(this._storage[index][i][0] === key){
+            const deletedValue = this._storage[index][i][1];
+            this._storage[index][i] = undefined;
+            return deletedValue;
+          }
+      }
+      }
+      catch(err){
+        console.log(err);
+      }
+      }
+      /*
+      * Returns the value associated with a key
+      * @param {string} key - the key to search for
+      * @return {*} - the value associated with the key
+      */
+      retrieve(key) {  // constant time O(1)
+      const index = this._myhash(key, this._size);
+      try{
+        if(!this._storage[index]){
+          throw "Some problem";
+        }
+        // since all the hash functions normally created would be 
+        // so effective in reducing the collisions
+        // this for loop cost can be amortized 
+        // [here worst case is so rare]
+        for(let i = 0; i < this._storage[index].length; i++){
+            if(this._storage[index][i][0] === key){
+              return this._storage[index][i][1];
+            }
+        }
+      }
+      catch(err){
+        console.log(err);
+      }
+      }  
+      /*
+      * Hashes string value into an integer that can be mapped to an array index
+      * @param {string} str - the string to be hashed
+      * @param {number} n - the size of the storage array
+      * @return {number} - an integer between 0 and n
+      */
+      _myhash(str, n) {
+        let encodeString = "abcdefghijklmnopqrstuvwxyz";
+        let sum = 0;
+        let index = 0;
+        for (let i = 0; i < str.length; i++){
+            index = encodeString.indexOf(str.charAt(i));
+            sum += str.charCodeAt(i) * index;
+
+        }
+        return sum % n;
+      }
+    }
+
+    myHashTable = new HashTable(5);
+    myHashTable.insert("a", 78);
+    myHashTable.insert("b", 48);
+    myHashTable.insert("x", 65);
+    myHashTable.remove("x");
+    console.log(JSON.stringify(myHashTable));
+    `,
+    date: '2019-11-02'
+},
 ]
 
 export default data;
