@@ -11,13 +11,23 @@ html {
   box-sizing: inherit;
 }
 
+@font-face {
+  font-family: 'Courgette';
+  src: url('assets/fonts/Courgette/Courgette-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('assets/fonts/SourceSansPro/SourceSansPro-Regular.ttf') format('truetype');
+}
+
 body {
     padding: 0;
     margin: 0;
     width: 100vw;
     /* background-image:url('./assets/images/background.jpg'); */
     background-repeat: repeat-y;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Source Sans Pro';
     background-size: 100% 300px;
 }
 
