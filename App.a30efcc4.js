@@ -726,4 +726,4 @@ var e;!function(){"use strict";var r={}.hasOwnProperty;function n(){for(var e=[]
 },{"react":"1n8/","@reach/router":"VJZj","../Blog/BlogData":"iJI6","../Blog/BlogCard":"gazy"}],"lY9v":[function(require,module,exports) {
 "use strict";var e=d(require("react")),t=d(require("react-dom")),r=require("@reach/router"),a=d(require("./About")),l=d(require("./Blog/BlogPage")),u=d(require("./Details/Details"));function d(e){return e&&e.__esModule?e:{default:e}}var n=function(){var t="";return window.location.pathname.includes("profile")&&(t="/profile"),e.default.createElement(r.Router,null,e.default.createElement(a.default,{path:t+"/"}),e.default.createElement(l.default,{path:t+"/blogs"}),e.default.createElement(u.default,{path:t+"/details/:id"}))};t.default.render(e.default.createElement(n),document.getElementById("root"));
 },{"react":"1n8/","react-dom":"NKHc","@reach/router":"VJZj","./About":"aqCa","./Blog/BlogPage":"XFzj","./Details/Details":"Uzlh"}]},{},["lY9v"], null)
-//# sourceMappingURL=App.cacb1a55.js.map
+//# sourceMappingURL=App.a30efcc4.js.map
