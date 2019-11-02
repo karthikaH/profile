@@ -1,8 +1,6 @@
 @import "../color";
 
 %blogContainerPlaceholder {
-    margin: 80px;
-    width: calc(100% - 160px);
     height: auto;
     background-color: #D8D8D8;
     display: flex;
@@ -20,11 +18,15 @@
 }
 
 .blogContainer {
+    margin: 10px;
+    width: calc(100% - 20px);
     @extend %blogContainerPlaceholder;   
     @extend %lineClampPlaceholder; 
 }
 
 .detailsBlogContainer {
+    margin: 10px;
+    width: calc(100% - 20px);
     @extend %blogContainerPlaceholder;  
 }
 
@@ -66,3 +68,17 @@
     overflow: hidden;
     text-overflow: ellipsis;
   }
+
+  //  tab and desktops
+@media only screen and (min-width: 800px) {
+    .blogContainer {
+        margin: 80px;
+        width: calc(100% - 160px);
+    }
+
+    .detailsBlogContainer {
+        margin: 80px;
+        width: calc(100% - 160px);
+    }
+
+}
