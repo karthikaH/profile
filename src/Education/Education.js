@@ -60,7 +60,7 @@ const Education = () => {
                     ]}
                         layout={{
                         font: {
-                            family: 'Helvetica, sans-serif',
+                            family: 'Source Sans Pro, sans-serif',
                             color: '#003B36'
                         },
                         margin: {
