@@ -552,6 +552,59 @@ const data = [
     `,
     date: '2019-11-02'
 },
+{
+  blogId: shortid.generate(),
+  blogTitle: 'Lets talk about Big O & Recursion',
+  blogDesc: `
+  <article>
+  <h4>Big O</h4>
+  <p>These are two things we consider or worry about while writing code -  Time & Space.
+  Time complexity & space complexity of a code can be denoted using this Big O. 
+  Big O usually considers the largest factor that affects the complexity of the code.</p>
+  
+  <p>Say n is the size of an array & and some manipulation is taking place on that array. 
+  Total there are three for loops - One for loop within another for loop and a separate for loop.</p>
+  
+  <p>Time complexity  - O(n<sup>2</sup> + n) where  n<sup>2</sup> + n can be ~ n<sup>2</sup>. n can be neglected as we are more concerned about 
+  20s & 2s time difference compared to 20s & 200s time difference.</p>
+  </article>
+
+  <h4>Recursion</h4>
+  <p>A recursive function is a function that calls itself. Sometimes it can improve readability of code to a great extend, 
+  but we need to keep track of how many concurrent calls will be made as 
+  it can lead to call stack overflow.</p>
+  </article>
+  `,
+  code:`
+    /** Big O example **/
+
+    e.g. for (let i = 0; i < n ; i++){
+      for (let j= 0; j < n ; j++){
+          // manipulation
+       }
+    }
+    for (let k = 0; k < n ; k++){
+     }
+
+     // time complexity O(n)
+
+    /** Recursion example **/
+
+    function factorial(n) {
+      if(n > 1){
+      return n*factorial(n-1);
+      }
+      else {
+      return 1;
+      }
+    }
+    
+    const res = factorial(5);
+    console.log(res); //120
+
+  `,
+  date: '2019-11-02'
+},
 ]
 
 export default data;
