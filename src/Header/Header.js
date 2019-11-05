@@ -21,10 +21,10 @@ const Header = () => {
   return (
     <div className="headerContainer">
       <Link to={url + '/blogs'} className="blogsLink">
-        <div>My Blogs</div>
+        <div>Blogs</div>
       </Link>
       <Link to={url + '/artWorks'} className="artWorksLink">
-        <div>My Art Works</div>
+        <div>Art</div>
       </Link>
       <a
         href="https://github.com/karthikaH"
