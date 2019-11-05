@@ -69,6 +69,12 @@
     left: 0;
 }
 
+.artWorksLink {
+    @extend %routeLinkPlaceholder; 
+    left: 105px;
+    width: 200px;
+}
+
 .linkedinImage {
     @extend %linkImagePlaceholder;
     width: 70px;

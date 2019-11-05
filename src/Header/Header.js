@@ -23,6 +23,9 @@ const Header = () => {
       <Link to={url + '/blogs'} className="blogsLink">
         <div>My Blogs</div>
       </Link>
+      <Link to={url + '/artWorks'} className="artWorksLink">
+        <div>My Art Works</div>
+      </Link>
       <a
         href="https://github.com/karthikaH"
         target="_blank"
