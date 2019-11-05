@@ -4,6 +4,7 @@ import {Router} from "@reach/router";
 import About from "./About";
 import BlogPage from "./Blog/BlogPage";
 import Details from "./Details/Details";
+import ArtWorks from "./ArtWorks/ArtWorks";
 
 const App = () => {
   let url = process.env.PUBLIC_URL || '';
@@ -18,6 +19,7 @@ const App = () => {
       <About path={url + '/'}/>
       <BlogPage path={url + '/blogs'}/>
       <Details path={url + '/details/:id'}/>
+      <ArtWorks path={url + '/artWorks'}/>
     </Router>
   );
 };
