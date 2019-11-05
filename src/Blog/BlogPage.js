@@ -16,7 +16,6 @@ const BlogPage = () => {
 
     const [filteredData, updateData] = useState(data);
     const updateSearchValue = (value) => {
-       console.log(value);
        updateData(data.filter(d => 
         d.blogTitle.toLowerCase().includes(value.toLowerCase()) ||
         d.blogDesc.toLowerCase().includes(value.toLowerCase())
