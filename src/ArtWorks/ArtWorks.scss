@@ -11,6 +11,8 @@
     width:100%;
     display: flex;
     flex-flow: row wrap;
+    padding: 0;
+    margin: 0;
 }
 
 .wrapper>ul>li {
@@ -36,12 +38,17 @@
 }
 
 .captionStyles{
+    height: 91px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
     padding: 16px;
 }
 
 .galaryBackLink {
     position: absolute;
-    margin:10px 80px;
+    margin:10px 40px;
     cursor: pointer;
     height: 40px;
     display: flex;
@@ -60,7 +67,7 @@
 
 .galaryAboutLink {
     position: absolute;
-    margin:10px 80px;
+    margin:10px 40px;
     cursor: pointer;
     height: 40px;
     display: flex;

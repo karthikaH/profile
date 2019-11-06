@@ -8,6 +8,9 @@ import dance from "../assets/gallaryImages/dance.jpeg";
 import tribalArt from "../assets/gallaryImages/tribalArt.jpeg";
 import ride from "../assets/gallaryImages/ride.jpeg";
 import rain from "../assets/gallaryImages/rain.jpeg";
+import rocket from "../assets/gallaryImages/rocket.jpg";
+import jumpingjack from "../assets/gallaryImages/jumpingjack.jpg";
+import krishna from "../assets/gallaryImages/krishna.jpg";
 import AboutPageFooter from "../AboutPageFooter/AboutPageFooter";
 
 
@@ -24,7 +27,7 @@ const ArtWorks = () => {
         <div className="wrapper"> 
             <div className="blogPageHeader">
                 <Link to={url + '/blogs'} className="galaryBackLink">
-                    <div>My Blogs</div>
+                    <div>Blogs</div>
                 </Link>
                 <Link to={url + '/'} className="galaryAboutLink">
                     <div>About Me</div>
@@ -53,6 +56,24 @@ const ArtWorks = () => {
 				<figure className="figureStyles">
 					<img src={rain} alt="rain"></img>
 					<figcaption className="captionStyles">A walk with a drizzle <span role='img' aria-label='rain'>🌧</span></figcaption>
+				</figure>
+			</li>
+            <li>
+				<figure className="figureStyles">
+					<img src={rocket} alt="rocket"></img>
+					<figcaption className="captionStyles">Let us ride to the moon!<span role='img' aria-label='rain'>🌔</span></figcaption>
+				</figure>
+			</li>
+            <li>
+				<figure className="figureStyles">
+					<img src={jumpingjack} alt="jumpingjack"></img>
+					<figcaption className="captionStyles">Let us create magic moments in our lives!<span role='img' aria-label='rain'>🎩</span></figcaption>
+				</figure>
+			</li>
+            <li>
+				<figure className="figureStyles">
+					<img src={krishna} alt="krishna"></img>
+					<figcaption className="captionStyles">The mischievous Lord Krishna</figcaption>
 				</figure>
 			</li>
             <li>
