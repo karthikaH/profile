@@ -39,7 +39,7 @@
 }
 
 .captionStyles{
-    height: 91px;
+    height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,6 +48,7 @@
     font-family: 'Courgette';
     font-size: 20px;
     color: $lightBgColor;
+    position: relative;
 }
 
 .galaryBackLink {
@@ -88,10 +89,28 @@
       }
 }
 
+.heart {
+    position: absolute;
+    bottom: 0;
+    right:30px;
+    font-size:24px;
+    cursor: pointer;
+}
+
+.heartCount {
+    position: absolute;
+    bottom: 5px;
+    right:15px;
+    font-size:18px;
+}
+
 //  tab and desktops
 @media only screen and (min-width: 800px) {
     .wrapper>ul>li {
         width:33.33%;
         list-style-type: none;
+    }
+    .captionStyles{
+        height: 91px;
     }
 }
