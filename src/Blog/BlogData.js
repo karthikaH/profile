@@ -605,6 +605,52 @@ const data = [
   `,
   date: '2019-11-02'
 },
+{
+  blogId: shortid.generate(),
+  blogTitle: 'body-parser in Node apps built using Express',
+  blogDesc: `
+  <article>
+  <p>In Node project, we always see a npm package <i>body-parser</i> being used. 
+  So what does it do exactly</p>
+  <p><i>body-parser</i> is actually a middleware(a list of functions that sits between the request & the response) module that is reuired to expose the entire
+  body portion of the incoming request to <i>req.body</i>. Earlier it comes along with express but now we have to install seperately.<br>
+  Information travels across the internet as packets. To have access to the body in a POST request, we need to access the stream. As data arrives as chucks, body-parser returns a function that 
+  collects these chunks and builds the req.body. It parses data differently based on the type. (eg application/json, application/x-www-form-urlencoded)
+  </p>
+  </article>
+  `,
+  code:`
+  import express from "express";
+  import { json, urlencoded } from "body-parser";
+  
+  export const app = express();
+  const port = 3000;
+  
+  // parse application/x-www-form-urlencoded
+  app.use(urlencoded({ extended: false }));
+  
+  // parse application/json
+  app.use(json());
+  
+  app.get("/", (req, res) => res.send({ message: "hello" }));
+  
+  app.post("/", (req, res) => {
+    console.log(req.body);
+    res.send(req.body);
+  });
+  
+  export const start = async () => {
+    try {
+      app.listen(port, () =>
+        console.log('Example app listening on port 3000')
+      );
+    } catch (e) {
+      console.error(e);
+    }
+  };
+  `,
+  date: '2019-11-10'
+},
 ]
 
 export default data;
