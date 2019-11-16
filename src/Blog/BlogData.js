@@ -651,6 +651,30 @@ const data = [
   `,
   date: '2019-11-10'
 },
+{
+  blogId: shortid.generate(),
+  blogTitle: 'A mind boggling JS question on `this`',
+  blogDesc: `
+  <article>
+    Lets see the result of the below mentioned question:
+  </article>
+  `,
+  code:`
+    x = 1;
+    function a() {
+        this.x = 2;
+        this.y = 3;
+        alert(x); // 1
+        return x;
+    }
+    var b = new a();
+    alert(JSON.stringify(b));
+    
+    //{"x":2,"y":3}
+  
+  `,
+  date: '2019-11-16'
+},
 ]
 
 export default data;
