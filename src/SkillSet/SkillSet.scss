@@ -18,6 +18,9 @@
 .skillSetList {
     flex: 0 0 calc(100% - 20px);
     margin: 0 10px 10px 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .skillSetHeader {
@@ -26,6 +29,24 @@
     background-color: #E8E8E8;
     margin: 10px;
     justify-content: center;
+}
+
+.skillsCircle {
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    background-color: $highLightColor;
+    border: 2px solid $lightBgColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.skills {
+    font-size: 18px;
+    color: $grayBackgroundColor;
+    font-weight: bold;
 }
 
 .skillSetHeaderText {
@@ -43,101 +64,11 @@
     justify-content: center;
 }
 
-.skillSetImageContainer {
-    flex: 0 0 calc(100% - 20px);
-    margin: 10px;
-    height: 320px; 
-    text-align: center;
-}
-
-.skillSetImage {
-    max-width: 500px;
-    min-width: 200px;
-    width: 100%;
-    height: 320px;
-}
-
 .skillHeaderName {
     font-weight: bold;
     font-size: 15px;
     color: #E8E8E8;
 }
-
-.hexagonalGrid {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-    height: 30%;
-
-    &:after {
-        content: "";
-        display: block;
-        clear: both;
-    }
-}
-
-.second {
-    margin:0 8%;
-}
-
-.hexagonalElement{
-    list-style-type: none;
-    position: relative;
-    float: left;
-    width: 12%;
-    padding: 0 0 14% 0;
-    margin: 2%;
-    transform: rotate(-60deg) skewY(30deg);
-    overflow: hidden;
-    visibility: hidden;
-    animation: spin 10s linear infinite;
-    /*Set our animation play state to paused initially */
-    animation-play-state: paused;
-
-
-    * {
-        visibility: visible;
-    }
-
-    .hexagon {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: $lightBgColor;
-        transform: skewY(-30deg) rotate(60deg);
-        overflow: hidden;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    &:hover {
-        animation-play-state: running;
-    }
-}
-
-@keyframes spin {
-    100% {transform: rotate(3turn); }
-  }
-
-.reactLogo {
-    height: 100%;
-    width:100%;
-}
-
-.reduxLogo {
-    height: 60%;
-    width: 80%;
-}
-
-.htmlLogo {
-    height: 112%;
-    width: 130%;
-}
-
 
 //  tab and desktops
 @media only screen and (min-width: 800px) {
@@ -150,7 +81,7 @@
     }
 
     .skillSetList {
-        flex: 0 0 calc(60% - 20px);
+        flex: 0 0 calc(100% - 20px);
         margin: 0 10px 10px 0;
     }
 }

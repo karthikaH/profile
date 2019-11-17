@@ -23,7 +23,7 @@ const educationData = [
         year: 2015,
         board: '',
         institution: '',
-        course: 'UG in ECE'
+        course: 'Under Graduation <br>in Electronics & Communication'
     }
 ]
 
@@ -41,19 +41,24 @@ const Education = () => {
                         style={{
                         width: "100%",
                         height: "100%"
-                    }}
+                        }}
+                        config={{displayModeBar: false}}
                         data={[{
                             x: educationData.map(val => val.year),
                             y: educationData.map(val => val.percentage),
                             type: 'scatter',
                             mode: 'lines+markers',
                             marker: {
-                                color: '#003B36',
-                                size: 12
+                                color: 'rgb(255, 255, 255)',
+                                size: 20,
+                                line: {
+                                  color: '#E98A15',
+                                  width: 2
+                                },
                             },
                             line: {
                                 color: '#E98A15',
-                                width: 4,
+                                width: 2,
                                 shape: 'spline'
                             }
                         }
@@ -66,8 +71,8 @@ const Education = () => {
                         margin: {
                             r: 10,
                             l: 10,
-                            b: 50,
-                            t: 30
+                            b: 100,
+                            t: 150
                         },
                         yaxis: {
                             rangemode: 'tozero',
@@ -75,7 +80,8 @@ const Education = () => {
                             zeroline: false,
                             showline: false,
                             showticklabels: false,
-                            fixedrange: true
+                            fixedrange: true,
+                            range: [88, 95]
                         },
                         xaxis: {
                             showline: false,
@@ -93,11 +99,11 @@ const Education = () => {
                                 y: val.percentage,
                                 xref: 'x',
                                 yref: 'y',
-                                text: `Completed<br><b>${val.course}`,
+                                text: `<b>${val.course}</b>`,
                                 showarrow: true,
-                                arrowhead: 7,
+                                arrowhead: 6,
                                 ax: 0,
-                                ay: -100
+                                ay: -70
                             }
                         }),
                         staticPlot: true,
@@ -107,11 +113,6 @@ const Education = () => {
                         plot_bgcolor: '#E8E8E8'
                     }}/>
                 </div>
-                <picture className="educationImageContainer">
-                    <source srcSet={education} media="(min-width: 1200px)"></source>
-                    <source srcSet={education831} media="(min-width: 800px)"></source>
-                    <img src={education260} alt="learning" className="educationImage"></img>
-                </picture>
             </div>
         </div>
     );
