@@ -54,6 +54,7 @@
 .labelCss {
   @extend %labelPlaceholder;
   background-color: #E8E8E8;
+  box-shadow:  4px 1px 0px rgba(233, 138, 21,0.3)
 }
 
 .selectedLabelCss {

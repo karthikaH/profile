@@ -47,7 +47,7 @@ const BlogPage = () => {
         </Link>
     ))
 
-    const uniqueLabels = [...new Set(data.map(d => d.label)), 'ALL']; 
+    const uniqueLabels = ['ALL', ...new Set(data.map(d => d.label))]; 
     return (
         <div className="blogPageContainer">
             <div className="blogPageHeader">
