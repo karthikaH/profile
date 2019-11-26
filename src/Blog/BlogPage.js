@@ -18,8 +18,9 @@ const BlogPage = () => {
     const [selectedLabel, updateLabel] = useState('ALL');
     const updateSearchValue = (value) => {
        updateData(data.filter(d => 
-        d.blogTitle.toLowerCase().includes(value.toLowerCase()) ||
-        d.blogDesc.toLowerCase().includes(value.toLowerCase())
+        (d.blogTitle.toLowerCase().includes(value.toLowerCase()) ||
+        d.blogDesc.toLowerCase().includes(value.toLowerCase())) && 
+        (d.label === selectedLabel || selectedLabel === 'ALL')
         ));
     }
 
