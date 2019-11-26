@@ -63,10 +63,20 @@
 
   .blogFooter {
       display: flex;
-      justify-content: flex-end;
+      justify-content: space-between;
       margin: 10px;
       color: #E98A15;
       font-weight: bold;
+      align-items: center;
+  }
+
+  .label {
+    justify-self: flex-start;
+    background-color: #E98A15;
+    color: $grayBackgroundColor;
+    padding: 5px;
+    border-radius: 4px;
+    font-family: 'Courgette';
   }
 
   .truncate {

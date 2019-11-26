@@ -20,6 +20,7 @@ const Details = (props) => {
             description={blog.blogDesc}
             date={blog.date}
             code={blog.code || ''}
+            label={blog.label}
             />)
     return (
         <div>

@@ -1,8 +1,5 @@
 import React from "react";
 import "./Education.scss";
-import education from "../assets/images/education.jpg";
-import education831 from "../assets/images/education-831.jpg";
-import education260 from "../assets/images/education-260.jpg";
 import Plot from '../custom-plotly';
 
 const educationData = [

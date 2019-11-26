@@ -15,12 +15,20 @@ const BlogPage = () => {
     }
 
     const [filteredData, updateData] = useState(data);
+    const [selectedLabel, updateLabel] = useState('ALL');
     const updateSearchValue = (value) => {
        updateData(data.filter(d => 
         d.blogTitle.toLowerCase().includes(value.toLowerCase()) ||
         d.blogDesc.toLowerCase().includes(value.toLowerCase())
         ));
     }
+
+    const updateLabelSearch = (value) => {
+        updateData(data.filter(d => 
+         d.label === value || value === 'ALL'
+         ));
+         updateLabel(value);
+     }
 
     const blog = filteredData.map(blog => (
         <Link
@@ -33,15 +41,26 @@ const BlogPage = () => {
                 date={blog.date}
                 code={blog.code || ''}
                 showOnlyTitle
+                label={blog.label}
             />
         </Link>
     ))
+
+    const uniqueLabels = [...new Set(data.map(d => d.label)), 'ALL']; 
     return (
         <div className="blogPageContainer">
             <div className="blogPageHeader">
                 <Link to={url + '/'} className="backLink">
                     <div>About Me</div>
                 </Link>
+            </div>
+            <div className="labelBlock">
+                {uniqueLabels.map(label => 
+                   // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions
+                   <div className={selectedLabel === label? "selectedLabelCss": "labelCss"} key={label} onKeyPress={()=> updateLabelSearch(label)} onClick={()=> updateLabelSearch(label)} role="presentation">
+                       {label}
+                   </div>
+                   )}
             </div>
             <div className="searchContainer">
                 <SearchParams updateSearchValue={updateSearchValue}/>
