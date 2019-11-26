@@ -36,7 +36,8 @@ const data = [
             ...
         }
         `,
-        date: '2019-10-19'
+        date: '2019-10-19',
+        label: 'Github Page Hosting'
     },
     {
         blogId: shortid.generate(),
@@ -76,7 +77,8 @@ const data = [
           console.log(reducedVal); // 8
           console.log(reducedObj); // {"Minessota":["Gary","Marc"],"LA":["Ann"]} 
         `,
-        date: '2019-10-20'
+        date: '2019-10-20',
+        label: 'Javascript'
     },
     {
         blogId: shortid.generate(),
@@ -172,7 +174,8 @@ const data = [
 
             console.log(myStack)
         `,
-        date: '2019-10-26'
+        date: '2019-10-26',
+        label: 'Data Structures'
     },
     {
         blogId: shortid.generate(),
@@ -266,7 +269,8 @@ const data = [
         
         console.log(myQueue.peek());
         `,
-        date: '2019-10-26'
+        date: '2019-10-26',
+        label: 'Data Structures'
     },
     {
       blogId: shortid.generate(),
@@ -427,7 +431,8 @@ const data = [
       myList.remove(removedOne);
       console.log(JSON.stringify(myList));
       `,
-      date: '2019-11-01'
+      date: '2019-11-01',
+      label: 'Data Structures'
   },
   {
     blogId: shortid.generate(),
@@ -550,7 +555,8 @@ const data = [
     myHashTable.remove("x");
     console.log(JSON.stringify(myHashTable));
     `,
-    date: '2019-11-02'
+    date: '2019-11-02',
+    label: 'Data Structures'
 },
 {
   blogId: shortid.generate(),
@@ -603,7 +609,8 @@ const data = [
     console.log(res); //120
 
   `,
-  date: '2019-11-02'
+  date: '2019-11-02',
+  label: 'Data Structures'
 },
 {
   blogId: shortid.generate(),
@@ -649,7 +656,8 @@ const data = [
     }
   };
   `,
-  date: '2019-11-10'
+  date: '2019-11-10',
+  label: 'Node JS'
 },
 {
   blogId: shortid.generate(),
@@ -673,7 +681,8 @@ const data = [
     //{"x":2,"y":3}
   
   `,
-  date: '2019-11-16'
+  date: '2019-11-16',
+  label: 'Javascript'
 },
 ]
 

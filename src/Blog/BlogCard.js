@@ -19,7 +19,9 @@ const BlogCard = (props) => {
                 language="js"
                 plugins={["line-numbers", "codeWindow"]}
             />}
-            <footer className="blogFooter">Written On: {props.date}</footer>
+            <footer className="blogFooter">
+                <div className="label">{props.label}</div>
+                <span>Written On: {props.date}</span></footer>
         </div>
     );
 };

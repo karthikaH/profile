@@ -1,3 +1,5 @@
+@import "../color";
+
 .blogPageHeader {
     height: 40px;
     width: 100%;
@@ -28,9 +30,48 @@
     color: black;
 }
 
+.labelBlock {
+  height: auto;
+  margin: 20px 10px 0;
+  width: calc(100% - 20px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+%labelPlaceholder {
+  justify-self: flex-start;
+  color: $grayBackgroundColor;
+  padding: 5px;
+  border-radius: 4px;
+  font-family: 'Courgette';
+  margin: 0 20px 10px 0;
+  cursor: pointer;
+  border: 2px solid $grayBackgroundColor;
+}
+
+.labelCss {
+  @extend %labelPlaceholder;
+  background-color: #E8E8E8;
+}
+
+.selectedLabelCss {
+  @extend %labelPlaceholder;
+  background-color: #E98A15;
+}
+
 .searchContainer {
   height: 50px;
   width:100%;
   display: flex;
   align-items: center;
+}
+
+  //  tab and desktops
+  @media only screen and (min-width: 800px) {
+    .labelBlock {
+      width:calc(100% - 160px);
+      margin:20px 80px 0;
+    }
 }
