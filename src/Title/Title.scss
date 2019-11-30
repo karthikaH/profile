@@ -10,7 +10,7 @@
 }
 
 .titleText {
-    color:#012622;
+    color: var(--verydark-color);
     font-weight: normal;
     font-size: 36px;
 }
@@ -25,17 +25,17 @@
 .profileHeaderName {
     font-weight: bold;
     font-size:15px;
-    color: #012622;
+    color: var(--verydark-color);
 }
 
 .profileHeaderValue {
     font-size:15px;
-    color: #003B36;
+    color: var(--dark-color);
     font-family: 'Courgette';
 }
 
 .divBand {
-    background-color: #E98A15;
+    background-color: var(--secondary-color);
     height: 4px;
     margin-bottom: 10px;
     width: 60%;

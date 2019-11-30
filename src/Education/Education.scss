@@ -13,7 +13,7 @@
 .educationHeader {
     display: flex;
     align-items: center;
-    background-color: $grayBackgroundColor;
+    background-color: var(--primary-color);
     margin: 10px;
     justify-content: center;
 }
@@ -29,7 +29,7 @@
     display: flex;
     flex-flow: row wrap;
     height: auto;
-    color: #012622;
+    color: var(--verydark-color);
     font-size: 14px;
     flex: 0 0 100%;
     justify-content: center;
@@ -45,7 +45,7 @@
 .educationHeaderName {
     font-weight: bold;
     font-size: 15px;
-    color: $grayBackgroundColor;
+    color: var(--primary-color);
 }
 
 //  tab and desktops

@@ -24,7 +24,8 @@ const educationData = [
     }
 ]
 
-const Education = () => {
+const Education = (props) => {
+    const {theme} = props;
     return (
         <div className="educationContainer effect">
             <header className="educationHeader effect">
@@ -49,12 +50,12 @@ const Education = () => {
                                 color: 'rgb(255, 255, 255)',
                                 size: 20,
                                 line: {
-                                  color: '#E98A15',
+                                  color: theme !== 'dark'?'#E98A15':'#605F5E',
                                   width: 2
                                 },
                             },
                             line: {
-                                color: '#E98A15',
+                                color: theme !== 'dark'?'#E98A15':'#605F5E',
                                 width: 2,
                                 shape: 'spline'
                             }
@@ -63,7 +64,7 @@ const Education = () => {
                         layout={{
                         font: {
                             family: 'Source Sans Pro, sans-serif',
-                            color: '#003B36'
+                            color: theme !== 'dark'?'#003B36':'#C5C5C5'
                         },
                         margin: {
                             r: 10,
@@ -106,8 +107,8 @@ const Education = () => {
                         staticPlot: true,
                         autosize: true,
                         height: 320,
-                        paper_bgcolor: '#E8E8E8',
-                        plot_bgcolor: '#E8E8E8'
+                        paper_bgcolor: theme !== 'dark'?'#E8E8E8':'#F4F4F9',
+                        plot_bgcolor: theme !== 'dark'?'#E8E8E8':'#F4F4F9'
                     }}/>
                 </div>
             </div>

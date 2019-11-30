@@ -50,7 +50,7 @@
   }
   .blogTitle:before {
     content: '✤';
-    color: #012622;
+    color: var(--verydark-color);
   }
 
   .blogDescription {
@@ -65,15 +65,15 @@
       display: flex;
       justify-content: space-between;
       margin: 10px;
-      color: #E98A15;
+      color: var(--secondary-color);
       font-weight: bold;
       align-items: center;
   }
 
   .label {
     justify-self: flex-start;
-    background-color: #E98A15;
-    color: $grayBackgroundColor;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     padding: 5px;
     border-radius: 4px;
     font-family: 'Courgette';
