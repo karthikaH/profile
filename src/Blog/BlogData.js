@@ -87,6 +87,7 @@ const data = [
         <article> In javascript, we hear the word Call Stack all the time. So what is a stack?
         <p>STACK is a data structure that helps you to store data like a 'stack of plates'. 
         It follows Last-in-First-out(LIFO) ordering. Hence, the last added Item will be removed first.</p>
+        <p>Our Code is modelled based on stack.</p>
         <p>Below is a simple class implementation of stack with pop(), push(), peek() & getLength() methods. 
         These methods have Time Complexity as O(1).
         </p>
@@ -183,7 +184,9 @@ const data = [
         blogDesc: `
         <article> In javascript, we hear the word Message Queue all the time. So what is a queue?
         <p>Queue is a data structure that helps you to store data like a 'line or a queue at a ticket stand'. 
-        It follows First-in-First-out(FIFO) ordering. Hence, the first added Items will be removed first.</p>
+        It follows First-in-First-out(FIFO) ordering. Hence, the first added Items will be removed first.
+        One good example is how the printing jobs work. First come is first served.
+        </p>
         <p>Below is a simple class implementation of Queue with enqueue(), dequeue(), peek() methods.
         These methods have Time Complexity as O(1).
         </p>
@@ -683,6 +686,131 @@ const data = [
   `,
   date: '2019-11-16',
   label: 'Javascript'
+},
+{
+  blogId: shortid.generate(),
+  blogTitle: 'Bubble Sort in javascript',
+  blogDesc: `
+  <article>
+  Bubble sorting is based on swapping. It goes on till there is no swapping to be done. It has a time complexity of O(n2) in worst case. Its not used in production code. 
+    <p>
+    e.g.<br/>  
+          [3,  6, 4, 2, 5]<br/>
+          [3,  4, 2, 5, 6] 1st outer iteration<br/>
+          [3,  2, 4, 5, 6] 2nd outer iteration<br/>
+          [2,  3, 4, 5, 6] 3rd outer iteration<br/>
+          [2,  3, 4, 5, 6]  4th no swap outer iteration<br/>
+    </p>
+  </article>
+  `,
+  code:`
+  function bubbleSort(arr) {
+    let isSwapped;
+    do {
+      isSwapped = false;
+      for (let i = 0; i < arr.length-1; i++) {
+        if (arr[i] > arr[i + 1]) {
+          let temp = arr[i];
+          arr[i] = arr[i + 1];
+          arr[i + 1] = temp;
+          isSwapped = true;
+        }
+      }
+    } while (isSwapped);
+    return arr;
+  }
+  
+  console.log(bubbleSort([5, 7, 6, 4]))
+  `,
+  date: '2019-11-30',
+  label: 'Algorithms'
+},
+{
+  blogId: shortid.generate(),
+  blogTitle: 'How ArrayList works!',
+  blogDesc: `
+  <article> Array List is a DS that interacts directly with allocated piece of memory.
+  <p>Since javascript is a language having garbage collection, memory alloction & de allocation is
+  not encountered, but usually we need to allocation some memory to ArrayList say 200, and have some algorithm to check
+  to increase it to may be 400 based on memory utilization.
+  </p>
+  <p>Getting a value is extremely optimized in ArrayList as we just need to go and grab the value from that index.
+  But deleting an index is de-optimized as we need to collapse the array list. So this data structure is good 
+  when there are cases where there are frequent gets and few deletes.
+  </p>
+  </article>
+  `,
+  code:`
+  // Array List implementation is really goog for cases where you have many gets 
+  // and very less deletes, As delete is every expensive as the size of the list 
+  // grows
+
+  // Its all about tradeoffs
+
+    class ArrayList {
+      constructor(){
+        this._length = 0;
+        this._dataStorage = {} //need to implement using object
+      }
+      
+      push(value) {
+        try {
+          if(!value && value !== 0){
+            throw "Parameter Not defined"
+          }
+          this._dataStorage[this._length] = value;
+          this._length++;
+        }
+        catch(err) {
+          console.log(err);
+        }
+      }
+      
+      pop() {
+        try {
+          if(!this._length){
+            throw "Array List is empty";
+          }
+
+          const lastElem = this._dataStorage[this._length - 1];
+          this._dataStorage[this._length - 1] = undefined;
+          this._length--;
+          return lastElem; 
+        }
+        catch(err){
+          console.log(err);
+        }
+      }
+      
+      get(index) {
+        return this._dataStorage[index];
+      }
+      
+      delete(index) {
+        const indexElem = this._dataStorage[index];
+        this._collapseTo(index);
+        return indexElem;
+      }
+      
+      _collapseTo(index) {
+        for(let i = index; i < this._length - 1; i++){
+          this._dataStorage[i] = this._dataStorage[i+1];
+        }
+        this.pop();
+      }
+    }
+
+    const myArrList = new ArrayList();
+    myArrList.push(1);
+    myArrList.push(2);
+    myArrList.push(3);
+    myArrList.pop();
+    myArrList.push(3);
+    myArrList.delete(1);
+    console.log(myArrList)
+  `,
+  date: '2019-11-30',
+  label: 'Data Structures'
 },
 ]
 
