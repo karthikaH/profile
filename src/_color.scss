@@ -4,6 +4,28 @@ $highLightColor: #E98A15;
 $veryDarkColor: #012622;
 $darkColor: #003B36;
 
+:root {
+    --primary-color: #68696b;
+    --secondary-color: #E98A15;
+    --font-color: #E8E8E8;
+    --dark-color: #003B36;
+    --verydark-color: #012622;
+    --bg-image: url('/assets/images/background.jpg') repeat-y;
+    --imageshadow-color: #E98A1552;
+    --hover-color: #ecb877;
+}
+
+[data-theme="dark"] {
+    --primary-color: #231F20;
+    --secondary-color: #605F5E;
+    --font-color: #F4F4F9;
+    --dark-color: #C5C5C5;
+    --verydark-color: #C5C5C5;
+    --bg-image: url('/assets/images/background-dark.jpg') repeat-y;
+    --imageshadow-color: #605f5e52;
+    --hover-color: #605f5e7a;
+}
+
 %effectPlaceholder
 {
 	content:"";

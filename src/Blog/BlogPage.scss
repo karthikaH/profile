@@ -14,13 +14,13 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #E98A15;
+    color: var(--secondary-color);
     font-size: 20px;
     font-family:'Courgette';
     right: 0;
 
     &:hover{
-        color: #ecb877; 
+        color:var(--hover-color); 
         text-decoration: underline;
       }
 }
@@ -42,13 +42,13 @@
 
 %labelPlaceholder {
   justify-self: flex-start;
-  color: $grayBackgroundColor;
+  color: var(--primary-color);
   padding: 5px;
   border-radius: 4px;
   font-family: 'Courgette';
   margin: 0 20px 10px 0;
   cursor: pointer;
-  border: 2px solid $grayBackgroundColor;
+  border: 2px solid var(--primary-color);
 }
 
 .labelCss {
@@ -59,7 +59,7 @@
 
 .selectedLabelCss {
   @extend %labelPlaceholder;
-  background-color: #E98A15;
+  background-color: var(--secondary-color);
 }
 
 .searchContainer {

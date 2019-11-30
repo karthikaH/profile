@@ -4,7 +4,7 @@
     margin: 20px;
     width: calc(100% - 40px);
     height: auto;
-    background-color: $grayBackgroundColor;
+    background-color: var(--primary-color);
     display: flex;
     flex-direction: column;
     border-radius: 5px;
@@ -35,8 +35,8 @@
     height: 110px;
     width: 110px;
     border-radius: 50%;
-    background-color: $highLightColor;
-    border: 2px solid $lightBgColor;
+    background-color: var(--secondary-color);
+    border: 2px solid var(--font-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,7 +45,7 @@
 
 .skills {
     font-size: 18px;
-    color: $grayBackgroundColor;
+    color: var(--primary-color);
     font-weight: bold;
 }
 
@@ -53,12 +53,12 @@
     font-family: 'Courgette';
     font-size: 30px;
     margin-left: 10px;
-    color: $grayBackgroundColor;
+    color: var(--primary-color);
 }
 
 .skillSetBody{
     display: flex;
-    color: #E98A15;
+    color: var(--secondary-color);
     font-size: 14px;
     flex-wrap: wrap;
     justify-content: center;

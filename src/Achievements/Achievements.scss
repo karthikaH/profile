@@ -14,7 +14,7 @@
 .lifeSkillsContainer {
     grid-row: 1;
     grid-column: none;
-    background-color: $grayBackgroundColor;
+    background-color: var(--primary-color);
     height: 100%;
     display: grid;
     grid-template-rows: 1fr 3fr;
@@ -25,7 +25,7 @@
     grid-column: none;
     height: 100%;
     grid-column: 2/3;
-    background-color: #E98A15;
+    background-color: var(--secondary-color);
     display: grid;
     grid-template-rows: 1fr 3fr;
 }
@@ -33,7 +33,7 @@
 .hobbiesContainer {
     grid-row: 3/3;
     grid-column: none;
-    background-color: $grayBackgroundColor;
+    background-color: var(--primary-color);
     height: 100%;
     display: grid;
     grid-template-rows: 1fr 3fr;
@@ -41,7 +41,7 @@
 
 .lifeSkillsHeader, .achievementsHeader, .hobbiesHeader{
     grid-row: 1;
-    background-color: #E98A15;
+    background-color: var(--secondary-color);
     margin: 10px;
     display: flex;
     justify-content: center;
@@ -54,11 +54,11 @@
     font-family: 'Courgette';
     font-size: 30px;
     margin-left: 10px;
-    color: $lightBgColor;
+    color: var(--font-color);
 }
 
 .achievementsHeader {
-    background-color: $grayBackgroundColor;
+    background-color: var(--primary-color);
 }
 
 .lifeSkillsBody, .achievementsBody, .hobbiesBody{
@@ -68,7 +68,7 @@
 
 
 %checkListPlaceholder {
-    color: $lightBgColor;
+    color: var(--font-color);
     list-style: none;
     line-height: 1.5;
     padding:2px;
@@ -80,17 +80,17 @@
   
   .lifeSkillsList li:before {
     content: '❋ ';
-    color: #E98A15;
+    color: var(--secondary-color);
   }
 
   .achievementList li:before {
     content: '✬ ';
-    color: $grayBackgroundColor;
+    color: var(--primary-color);
   }
 
   .hobbiesList li:before {
     content: '❤︎ ';
-    color: #E98A15;
+    color: var(--secondary-color);
   }
 
 //  tab and desktops
