@@ -4,6 +4,7 @@ import SkillSet from "./SkillSet/SkillSet";
 import Education from "./Education/Education";
 import Achievements from "./Achievements/Achievements";
 import AboutPageFooter from "./AboutPageFooter/AboutPageFooter";
+import DarkModeSlider from "./DarkModeSlider/DarkModeSlider";
 
 class About extends React.Component {
     constructor(props) {
@@ -23,11 +24,12 @@ class About extends React.Component {
         const {themeMode} = this.state;
         console.log(themeMode);
         return <div>
+            <DarkModeSlider onThemeChange={this._handleThemeChange}/>
             <Header theme={themeMode}/>
             <SkillSet/>
             <Education theme={themeMode}/>
             <Achievements/>
-            <AboutPageFooter onThemeChange={this._handleThemeChange}/>
+            <AboutPageFooter/>
         </div>
     }
 }

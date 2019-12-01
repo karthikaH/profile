@@ -20,7 +20,7 @@
     right: 0;
 
     &:hover{
-        color:var(--hover-color); 
+        color: var(--hover-color); 
         text-decoration: underline;
       }
 }
@@ -54,7 +54,7 @@
 .labelCss {
   @extend %labelPlaceholder;
   background-color: #E8E8E8;
-  box-shadow:  4px 1px 0px rgba(233, 138, 21,0.3)
+  box-shadow:  4px 1px 0px var(--labelshadow-color);
 }
 
 .selectedLabelCss {
