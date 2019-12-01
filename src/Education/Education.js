@@ -50,12 +50,12 @@ const Education = (props) => {
                                 color: 'rgb(255, 255, 255)',
                                 size: 20,
                                 line: {
-                                  color: theme !== 'dark'?'#E98A15':'#605F5E',
+                                  color: theme !== 'dark'?'#E98A15':'#231F20',
                                   width: 2
                                 },
                             },
                             line: {
-                                color: theme !== 'dark'?'#E98A15':'#605F5E',
+                                color: theme !== 'dark'?'#E98A15':'#231F20',
                                 width: 2,
                                 shape: 'spline'
                             }
@@ -64,7 +64,7 @@ const Education = (props) => {
                         layout={{
                         font: {
                             family: 'Source Sans Pro, sans-serif',
-                            color: theme !== 'dark'?'#003B36':'#C5C5C5'
+                            color: theme !== 'dark'?'#003B36':'#231F20'
                         },
                         margin: {
                             r: 10,
@@ -107,8 +107,8 @@ const Education = (props) => {
                         staticPlot: true,
                         autosize: true,
                         height: 320,
-                        paper_bgcolor: theme !== 'dark'?'#E8E8E8':'#F4F4F9',
-                        plot_bgcolor: theme !== 'dark'?'#E8E8E8':'#F4F4F9'
+                        paper_bgcolor: theme !== 'dark'?'#E8E8E8':'#AFACAC',
+                        plot_bgcolor: theme !== 'dark'?'#E8E8E8':'#AFACAC'
                     }}/>
                 </div>
             </div>
