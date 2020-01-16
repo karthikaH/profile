@@ -1,7 +1,6 @@
 
 # Karthika Hariharan - My Portfolio
 
-Mail me @ karthikah7760@gmail.com for freelancing
 A platform to showcase my passion towards Web Development and Art
 
 ## Getting Started
